@@ -4,6 +4,7 @@ import './App.css';
 import 'bulma';
 import Home from './pages/home.js';
 import Project from './pages/project.js';
+import About from './pages/about.js';
 import sideDoor from './images/sdlarge.png';
 import space from './images/space.png';
 import veritas from './images/veritas.jpg';
@@ -203,14 +204,22 @@ class App extends Component {
         route: routeName
       });
   }
+
+  renderLogic = () => {
+    if (this.state.route === 'home') {
+      return (<Home projects={projects} router={this.updateRoute}></Home>)
+    } else if (this.state.route === 'about'){
+      return (<About router={this.updateRoute}></About>)
+    } else {
+      return (<Project project={_.find(projects, ['slug', this.state.route])} router={this.updateRoute}></Project>)
+    }
+  }
+
   render() {
     console.log(_.find);
     return (
       <div className="App">
-        {this.state.route === 'home' ?
-          <Home projects={projects} router={this.updateRoute}></Home>:
-          <Project project={_.find(projects, ['slug', this.state.route])}></Project>
-        }
+        {this.renderLogic()}
       </div>
     );
   }

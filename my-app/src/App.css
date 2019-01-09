@@ -19,6 +19,7 @@
   text-decoration: none;
   color: black;
   font-size: 24px;
+  font-weight: bold;
 }
 a.nav-home {
     border-left: #0026CA 8px solid;
@@ -71,6 +72,7 @@ ul.menu li a {
 .footer {
   padding: 0 !important;
   background-color: #ffffff !important;
+  margin-top: 80px;
 }
 .footer-solid {
   background-color: #003367;
@@ -140,7 +142,7 @@ ul.menu li a {
   padding-bottom: 24px;
 }
 .project-description button.project-btn {
-  background-color: #0026CA;
+  background-color: #003367;
   padding: 16px;
   text-transform: uppercase;
   font-size: 18px;
@@ -197,6 +199,44 @@ img.process-image {
   font-family: 'Fira Sans', sans-serif;
   font-size: 32px;
   text-decoration: none;
-  border-bottom: 2px solid #0026CA;
+  border-bottom: 4px solid #0026CA;
+  color: #4f4f4f;
+
+}
+.Project a.projectLinkSecondary {
+  margin-left: 56px;
+}
+/*About*/
+.About .container {
+  margin-bottom: 160px !important;
+}
+.About h1.hello {
+  font-family: 'Noto Serif', serif;
+  color: #4f4f4f;
+  font-size: 64px;
+  margin-bottom: 104px;
+  font-weight: 700
+}
+.About p.aboutMe {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 40px;
+  color: #4f4f4f;
+  text-align: left;
+  margin-bottom: 40px;
+  line-height: 56px;
+  font-weight: bold;
+}
+.About ul.menu li a {
+  color: #000000;
+}
+.About ul.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 64px;
+}
+.About p.aboutMe a {
+  text-decoration: none;
+  border-bottom: 4px solid #0026CA;
   color: #4f4f4f;
 }

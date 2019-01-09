@@ -15,10 +15,10 @@ class Project extends Component {
                   <a href="">Resume</a>
                 </li>
                 <li>
-                  <a href="">About</a>
+                  <a onClick={() => {this.props.router("about")}}>About</a>
                 </li>
                 <li>
-                  <a className="nav-home" href="">Katelyn Duncan</a>
+                  <a className="nav-home" onClick={() => {this.props.router("home")}}>Katelyn Duncan</a>
                 </li>
               </ul>
             </div>
@@ -39,8 +39,8 @@ class Project extends Component {
               <div className="column is-8 is-offset-2 summary">
 
                 <p className="summary">{this.props.project.attributes.summary}</p>
-                <a className="projectLink" href="{this.props.project.attributes.siteLink}">{this.props.project.attributes.site}</a>
-                <a className="projectLink" href="{this.props.project.attributes.siteLinkO}">{this.props.project.attributes.siteO}</a>
+                <a className="projectLink" href={this.props.project.attributes.siteLink}>{this.props.project.attributes.site}</a>
+                <a className="projectLink projectLinkSecondary" href="{this.props.project.attributes.siteLinkO}">{this.props.project.attributes.siteO}</a>
               </div>
 
               <div className="columns is-variable is-7">
@@ -108,6 +108,9 @@ class Project extends Component {
                   <img className="process-image" src={this.props.project.attributes.resultFour}/>
                 </div>
               </div>
+              <div className="column is-6 is-offset-3">
+                    <a className="projectLink" onClick={() => {this.props.router("home")}}>Back to Projects</a>
+              </div>
               <div className="columns is-variable is-7">
                 <div className="column is-4 process-image">
                   <img src={this.props.project.attributes.resultFive}/>
@@ -119,33 +122,25 @@ class Project extends Component {
                   <img src={this.props.project.attributes.resultSeven}/>
                 </div>
               </div>
-              <div className="columns is-variable is-7">
-                <div className="column is-6 process-image">
-                  <img src={this.props.project.attributes.resultEight}/>
-                </div>
-                <div className="column is-6 process-image">
-                  <img src={this.props.project.attributes.resultNine}/>
-                </div>
-              </div>
+
 
 
             </div>
-
           </div>
           </div>
           <div className="columns footer">
             <div className="is-two-fifths column">
               <div className="landing-info">
-                <a className="nav-home" href="">Katelyn Duncan</a>
+                <a className="nav-home" onClick={() => {this.props.router("home")}}>Katelyn Duncan</a>
                 <ul className="social">
                   <li>
-                    <a href=""><img src={mail}/></a>
+                    <a href="mailto:duncan.katelynj@gmail.com"><img src={mail}/></a>
                   </li>
                   <li>
-                    <a href=""><img src={github}/></a>
+                    <a href="https://github.com/kjduncan"><img src={github}/></a>
                   </li>
                   <li>
-                    <a href=""><img src={linkedIn}/></a>
+                    <a href="https://www.linkedin.com/in/duncankatelyn/"><img src={linkedIn}/></a>
                   </li>
 
                 </ul>
@@ -157,7 +152,7 @@ class Project extends Component {
                   <a href="">Resume</a>
                 </li>
                 <li>
-                  <a href="">About</a>
+                  <a onClick={() => {this.props.router("about")}}>About</a>
                 </li>
               </ul>
             </div>

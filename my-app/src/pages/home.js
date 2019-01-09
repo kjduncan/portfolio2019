@@ -18,23 +18,23 @@ class Home extends Component {
                     <a href="">Resume</a>
                   </li>
                   <li>
-                    <a href="">About</a>
+                    <a onClick={() => {this.props.router("about")}}>About</a>
                   </li>
                 </ul>
               </div>
               <div className="is-two-fifths column">
                 <div className="landing-info">
-                  <a className="nav-home" href="">Katelyn Duncan</a>
+                  <a className="nav-home" onClick={() => {this.props.router("home")}}>Katelyn Duncan</a>
                   <h1>Interaction Design</h1>
                   <ul className="social">
                     <li>
-                      <a href=""><img src={mail}/></a>
+                      <a href="mailto:duncan.katelynj@gmail.com"><img src={mail}/></a>
                     </li>
                     <li>
-                      <a href=""><img src={github}/></a>
+                      <a href="https://github.com/kjduncan"><img src={github}/></a>
                     </li>
                     <li>
-                      <a href=""><img src={linkedIn}/></a>
+                      <a href="https://www.linkedin.com/in/duncankatelyn/"><img src={linkedIn}/></a>
                     </li>
 
                   </ul>
@@ -56,17 +56,17 @@ class Home extends Component {
           <div className="columns footer">
             <div className="is-two-fifths column">
               <div className="landing-info">
-                <a className="nav-home" href="">Katelyn Duncan</a>
+                <a className="nav-home" onClick={() => {this.props.router("home")}}>Katelyn Duncan</a>
                 <ul className="social">
-                  <li>
-                    <a href=""><img src={mail}/></a>
-                  </li>
-                  <li>
-                    <a href=""><img src={github}/></a>
-                  </li>
-                  <li>
-                    <a href=""><img src={linkedIn}/></a>
-                  </li>
+                <li>
+                  <a href="mailto:duncan.katelynj@gmail.com"><img src={mail}/></a>
+                </li>
+                <li>
+                  <a href="https://github.com/kjduncan"><img src={github}/></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/duncankatelyn/"><img src={linkedIn}/></a>
+                </li>
 
                 </ul>
               </div>
@@ -77,7 +77,7 @@ class Home extends Component {
                   <a href="">Resume</a>
                 </li>
                 <li>
-                  <a href="">About</a>
+                  <a onClick={() => {this.props.router("about")}}>About</a>
                 </li>
               </ul>
             </div>
