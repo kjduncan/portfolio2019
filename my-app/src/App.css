@@ -174,14 +174,13 @@ ul.menu li a {
   font-weight: bolder;
   font-family: 'Fira Sans', sans-serif;
 }
-.Project p.summary {
+.Project .summary {
   font-family: 'Fira Sans', sans-serif;
   font-size: 32px;
   margin-bottom: 48px;
 }
 .Project p.processSecondary {
   text-align: left;
-  padding-left: 40px;
 }
 .Project .process-image {
   display: flex;
@@ -193,5 +192,11 @@ img.process-image {
 }
 .Project .process-image img {
   padding-bottom: 40px;
-  padding-left: 20px;
+}
+.Project a.projectLink {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 32px;
+  text-decoration: none;
+  border-bottom: 2px solid #0026CA;
+  color: #4f4f4f;
 }
