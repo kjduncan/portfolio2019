@@ -4,6 +4,7 @@
 .App {
   text-align: center;
   color: #4f4f4f;
+  overflow: hidden !important;
 }
 .Project .column {
   flex-direction: column !important;
@@ -319,12 +320,7 @@ img.process-image {
   .project-info {
     height: 320px;
   }
-  .gif-stuff {
-    width: 400px;
-  }
-  .footer-solid {
-    width: 400px;
-  }
+
 }
 @media only screen and (max-width : 940px) {
   .Card .project-info {
