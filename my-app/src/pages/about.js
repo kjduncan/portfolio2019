@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import mail from '../images/mail.svg';
 import linkedIn from '../images/linkedin.svg';
 import github from '../images/github.svg';
+import '../App.css';
+import 'bulma';
 
 class About extends Component {
   render() {
@@ -12,20 +15,20 @@ class About extends Component {
             <div className="column is-7 is-offset-5 ">
               <ul className="menu">
                 <li>
-                  <a href="">Resume</a>
+                  <a href="https://drive.google.com/open?id=1aOa1IHc5hr92wdlKwThYCk4a-wuCY-lx" target="_blank">Resume</a>
                 </li>
                 <li>
-                  <a onClick={() => {this.props.router("about")}}>About</a>
+                  <Link to="about">About</Link>
                 </li>
                 <li>
-                  <a className="nav-home" onClick={() => {this.props.router("home")}}>Katelyn Duncan</a>
+                  <Link className="nav-home" to="/">Katelyn Duncan</Link>
                 </li>
               </ul>
             </div>
             <div className="column is-10 is-offset-1">
               <h1 className="hello">Hi, Im Katelyn</h1>
 
-              <p className="aboutMe">I am a digital designer with over 3 years of experience designing and building digitally-focused prodcuts and services. I am currently based in Pittsburgh studying human computer interaction at Carnegie Mellon University.</p>
+              <p className="aboutMe">I am a digital designer with over 3 years of experience designing and building digitally-focused products and services. I am currently based in Pittsburgh studying human computer interaction at Carnegie Mellon University.</p>
               <p className="aboutMe">
               My specialty is app and web design, user research, prototyping, and frontend development. I appreciate charmingly simple interfaces and funky design. I am constantly learning and am always ready to try my hand at new technologies.
               </p>
@@ -37,7 +40,7 @@ class About extends Component {
           <div className="columns footer">
             <div className="is-two-fifths column">
               <div className="landing-info">
-                <a className="nav-home" onClick={() => {this.props.router("home")}}>Katelyn Duncan</a>
+                <Link className="nav-home" to="/">Katelyn Duncan</Link>
                 <ul className="social">
                   <li>
                     <a href="mailto:duncan.katelynj@gmail.com"><img src={mail}/></a>
@@ -55,10 +58,10 @@ class About extends Component {
             <div className="footer-solid column is-three-fifths">
               <ul className="menu">
                 <li>
-                  <a href="">Resume</a>
+                  <a href="https://drive.google.com/open?id=1aOa1IHc5hr92wdlKwThYCk4a-wuCY-lx" target="_blank">Resume</a>
                 </li>
                 <li>
-                  <a onClick={() => {this.props.router("about")}}>About</a>
+                  <Link to="about">About</Link>
                 </li>
               </ul>
             </div>

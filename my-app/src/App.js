@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bulma';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { withRouter } from "react-router";
+
+
 import Home from './pages/home.js';
 import Project from './pages/project.js';
 import About from './pages/about.js';
@@ -190,6 +193,19 @@ let projects = [
   }
 ]
 
+class ScrollToTop extends Component {
+  componentDidUpdate(prevProps) {
+    console.warn(prevProps);
+    window.scrollTo(0, 0);
+  }
+
+  render() {
+    return this.props.children;
+  }
+}
+
+withRouter(ScrollToTop);
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -199,28 +215,24 @@ class App extends Component {
   }
 
   updateRoute = (routeName) => {
-    console.log(routeName);
     this.setState({
         route: routeName
       });
   }
 
-  renderLogic = () => {
-    if (this.state.route === 'home') {
-      return (<Home projects={projects} router={this.updateRoute}></Home>)
-    } else if (this.state.route === 'about'){
-      return (<About router={this.updateRoute}></About>)
-    } else {
-      return (<Project project={_.find(projects, ['slug', this.state.route])} router={this.updateRoute}></Project>)
-    }
-  }
-
   render() {
-    console.log(_.find);
     return (
-      <div className="App">
-        {this.renderLogic()}
-      </div>
+      <Router>
+        <ScrollToTop>
+          <div className="App">
+            <Route path="/" exact render={props => <Home {...props} projects={projects} />} />
+            <Route path="/about/" component={About} />
+            {projects.map((card, index) => {
+              return <Route path={`/project/${card.slug}`} render={props => <Project {...props} project={projects[index]} />} />
+            })}
+          </div>
+        </ScrollToTop>
+      </Router>
     );
   }
 }

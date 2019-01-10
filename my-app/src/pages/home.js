@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+import 'bulma';
+
 import Card from '../components/card';
 import mail from '../images/mail.svg';
 import linkedIn from '../images/linkedin.svg';
@@ -15,16 +18,16 @@ class Home extends Component {
             <div className="gif-stuff column is-three-fifths">
                 <ul className="menu">
                   <li>
-                    <a href="">Resume</a>
+                    <a href="https://drive.google.com/open?id=1aOa1IHc5hr92wdlKwThYCk4a-wuCY-lx" target="_blank">Resume</a>
                   </li>
                   <li>
-                    <a onClick={() => {this.props.router("about")}}>About</a>
+                    <Link to="about">About</Link>
                   </li>
                 </ul>
               </div>
               <div className="is-two-fifths column">
                 <div className="landing-info">
-                  <a className="nav-home" onClick={() => {this.props.router("home")}}>Katelyn Duncan</a>
+                  <Link className="nav-home" to="/">Katelyn Duncan</Link>
                   <h1>Interaction Design</h1>
                   <ul className="social">
                     <li>
@@ -42,11 +45,10 @@ class Home extends Component {
               </div>
           </div>
           <div className="container">
-            <div className="columns">
+            <div className="columns is-variable is-7 card-wrapper">
                 {this.props.projects.map((card, index) => {
-                  console.log('yo yo yo', card);
                   return (
-                    <div className="column is-half">
+                    <div className="column is-half is-10-mobile is-offset-1-mobile">
                         <Card key={index} cardTitle={card.title} cardDescription={card.attributes.description} cardType={card.attributes.type} cardImgSrc={card.attributes.imgSrc} router={this.props.router} cardSlug={card.slug}></Card>
                     </div>
                   )
@@ -74,10 +76,10 @@ class Home extends Component {
             <div className="footer-solid column is-three-fifths">
               <ul className="menu">
                 <li>
-                  <a href="">Resume</a>
+                  <a href="https://drive.google.com/open?id=1aOa1IHc5hr92wdlKwThYCk4a-wuCY-lx" target="_blank">Resume</a>
                 </li>
                 <li>
-                  <a onClick={() => {this.props.router("about")}}>About</a>
+                  <Link to="about">About</Link>
                 </li>
               </ul>
             </div>

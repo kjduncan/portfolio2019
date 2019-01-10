@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+import '../App.css';
 
 class Card extends Component {
   render() {
@@ -8,7 +10,7 @@ class Card extends Component {
             <div className="project-image" style={{backgroundImage: `url(${this.props.cardImgSrc})`}}>
             </div>
           </div>
-          <div className="columns">
+          <div className="columns is-desktop">
             <div className="project-info is-full column">
               <div className="project-title column is-half">
                 <h3> {this.props.cardType}</h3>
@@ -16,7 +18,7 @@ class Card extends Component {
               </div>
               <div className="project-description">
                 <p>{this.props.cardDescription}</p>
-                <button className="project-btn" onClick={() => {console.log(this.props); this.props.router(this.props.cardSlug)}}>view project</button>
+                <Link to={`/project/${this.props.cardSlug}`} className="project-btn">view project</Link>
               </div>
             </div>
           </div>

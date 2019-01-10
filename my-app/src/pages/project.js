@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import mail from '../images/mail.svg';
 import linkedIn from '../images/linkedin.svg';
 import github from '../images/github.svg';
+import '../App.css';
+import 'bulma';
 
 class Project extends Component {
   render() {
@@ -12,13 +15,13 @@ class Project extends Component {
             <div className="column is-7 is-offset-5 ">
               <ul className="menu">
                 <li>
-                  <a href="">Resume</a>
+                  <a href="https://drive.google.com/open?id=1aOa1IHc5hr92wdlKwThYCk4a-wuCY-lx" target="_blank">Resume</a>
                 </li>
                 <li>
-                  <a onClick={() => {this.props.router("about")}}>About</a>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <a className="nav-home" onClick={() => {this.props.router("home")}}>Katelyn Duncan</a>
+                  <Link className="nav-home" to="/">Katelyn Duncan</Link>
                 </li>
               </ul>
             </div>
@@ -109,7 +112,7 @@ class Project extends Component {
                 </div>
               </div>
               <div className="column is-6 is-offset-3">
-                    <a className="projectLink" onClick={() => {this.props.router("home")}}>Back to Projects</a>
+                    <Link className="projectLink" to="/">&#11013; Back to Projects</Link>
               </div>
               <div className="columns is-variable is-7">
                 <div className="column is-4 process-image">
@@ -131,7 +134,7 @@ class Project extends Component {
           <div className="columns footer">
             <div className="is-two-fifths column">
               <div className="landing-info">
-                <a className="nav-home" onClick={() => {this.props.router("home")}}>Katelyn Duncan</a>
+                <Link className="nav-home" to="/">Katelyn Duncan</Link>
                 <ul className="social">
                   <li>
                     <a href="mailto:duncan.katelynj@gmail.com"><img src={mail}/></a>
@@ -149,10 +152,10 @@ class Project extends Component {
             <div className="footer-solid column is-three-fifths">
               <ul className="menu">
                 <li>
-                  <a href="">Resume</a>
+                  <a href="https://drive.google.com/open?id=1aOa1IHc5hr92wdlKwThYCk4a-wuCY-lx" target="_blank">Resume</a>
                 </li>
                 <li>
-                  <a onClick={() => {this.props.router("about")}}>About</a>
+                  <Link to="/about">About</Link>
                 </li>
               </ul>
             </div>
