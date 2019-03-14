@@ -19,7 +19,7 @@
 .landing-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   font-family: 'Noto Serif', serif;
   color: #000000;
   height: 75vh;
@@ -28,12 +28,12 @@
 }
 .landing-info a {
   text-decoration: none;
-  color: black;
+  color: #334431;
   font-size: 24px;
   font-weight: bold;
 }
 a.nav-home {
-    border-left: #0026CA 8px solid;
+    border-left: #f2cbbc 8px solid;
     padding-left: 8px;
     text-align: left;
     display: flex;
@@ -43,12 +43,20 @@ a.nav-home {
   display: flex;
 }
 .landing-info h1 {
-  font-size: 64px;
-  line-height: 64px;
+  font-size: 80px;
+  line-height: 96px;
   text-align: left;
+  font-weight: 700;
+  color: #334431;
+}
+.landing-info h2 {
+  text-align: left;
+  color: #334431;
+  font-size: 32px;
+  margin-bottom: 16px;
 }
 .gif-stuff {
-  background-color: #003367;
+  background-color: #f2cbbc;
   height: 75vh;
   margin-bottom: 80px;
 }
@@ -63,10 +71,11 @@ ul.menu {
 ul.menu li {
   margin-left: 24px;
   font-size: 24px;
+
 }
 ul.menu li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #334431;
   font-family: 'Noto Serif SC', serif;
   font-weight: 600;
 
@@ -74,12 +83,15 @@ ul.menu li a {
 .social {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   padding-right: 24px;
+  padding-left: 4px;
 }
 .social img {
   color: #000000;
-  height: 32px;
+  height: 24px;
+}
+.social li {
+    padding-right: 16px;
 }
 
 /*footer styles*/
@@ -89,7 +101,7 @@ ul.menu li a {
   margin-top: 80px;
 }
 .footer-solid {
-  background-color: #003367;
+  background-color: #f2cbbc;
 }
 .footer .landing-info {
   height: 240px;
@@ -100,21 +112,27 @@ ul.menu li a {
 
 }
 .footer ul.menu li a {
-  color: #ffffff !important;
+  color: #334431 !important;
 }
 .footer .landing-info a.nav-home {
   align-self: flex-end;
 }
+.footer .landing-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
 .footer .social {
   padding-left: 24px;
   padding-right: 0;
+  justify-content: space-between;
+
 }
 
 /*card component*/
 .Card {
-  border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  margin-bottom: 40px;
+  border-radius: 12px;
   font-family: 'Fira Sans', sans-serif;
   padding-bottom: 40px;
 }
@@ -130,9 +148,10 @@ ul.menu li a {
   color: #4f4f4f;
 }
 .Card .project-image {
-  border-radius: 3px 3px 0 0;
+  border-radius: 12px 12px 0 0;
   height: 360px;
   background-size: cover;
+  background: center;
 }
 .project-title {
   display: flex;
@@ -163,8 +182,8 @@ ul.menu li a {
   padding-bottom: 24px;
 }
 .project-description a.project-btn {
-  background-color: #003367;
-  padding: 16px 16px;
+  background-color: #000000;
+  padding: 16px 64px;
   text-transform: uppercase;
   font-size: 16px;
   color: #ffffff;
@@ -178,9 +197,6 @@ ul.menu li a {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 /*project page*/
-.Project ul.menu li a {
-  color: #000000;
-}
 .Project ul.menu {
   display: flex;
   flex-direction: row;
@@ -188,16 +204,17 @@ ul.menu li a {
   margin-bottom: 64px;
 }
 .Project .project-title {
-  padding-top: 48px;
+  padding-top: 80px;
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 16px;
 }
 .Project ul.menu a.nav-home {
   margin-left: 32px;
 }
 .Project .project-description-lg {
   font-size: 48px;
-  line-height: 48px;
+  line-height: 56px;
   padding-top: 24px;
   margin-bottom: 56px;
   font-weight: bolder;
@@ -206,7 +223,7 @@ ul.menu li a {
 .Project .summary {
   font-family: 'Fira Sans', sans-serif;
   font-size: 32px;
-  margin-bottom: 48px;
+  margin-bottom: 80px;
   text-align: center;
   padding: 0;
 }
@@ -226,16 +243,19 @@ img.process-image {
 }
 .Project a.projectLink {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 40px;
+  font-size: 18px;
   text-decoration: none;
   color: #4f4f4f;
   transition: 0.3s;
   font-weight: 700;
-
-
+  border: 2px solid #334431;
+  padding: 16px 0;
+  text-transform: uppercase;
+  border-radius: 3px;
 }
 .Project a.projectLink:hover {
-  border-bottom: 4px solid #0026CA;
+  background-color: #334431;
+  color: #ffffff;
 }
 .Project a.projectLinkSecondary {
   margin-left: 56px;
@@ -272,8 +292,71 @@ img.process-image {
 }
 .About p.aboutMe a {
   text-decoration: none;
-  border-bottom: 4px solid #0026CA;
+  border-bottom: 4px solid #334431;
   color: #4f4f4f;
+}
+/*secondary project*/
+.newProject {
+  color: #4f4f4f;
+}
+.newProject img {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
+}
+.newProject img.shadowNone {
+  box-shadow: none;
+}
+.newProject .details {
+  flex-direction: row !important;
+  display: flex;
+  text-align: left;
+
+}
+.problem {
+    padding-left: 0;
+    padding-top: 0;
+}
+.newProject .details h3 {
+  font-size: 24px;
+  font-family: 'Noto Serif', serif;
+  font-weight: 500;
+  color: #4f4f4f;
+  padding-top: 0;
+  font-weight: 600;
+}
+.newProject .details p {
+  font-family: 'Fira Sans', sans-serif;
+}
+.newProject .challenge {
+  flex-direction: column !important;
+  display: flex;
+  padding-left: 0;
+  padding-top: 0;
+}
+.newProject .challenge p {
+  padding-bottom: 32px;
+}
+.newProject .processGroup {
+  text-align: left;
+}
+.newProject .processGroup h3 {
+  font-size: 24px;
+  font-family: 'Noto Serif', serif;
+  font-weight: 500;
+  color: #4f4f4f;
+  padding-top: 0;
+  font-weight: 600;
+}
+.newProject .processGroup p {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 24px;
+  padding: 24px 0;
+}
+.newProject .researchMargin {
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+.browse {
+  margin: 80px 0;
 }
 
 /* mobile syltes*/
@@ -305,11 +388,12 @@ img.process-image {
   }
   .Project .project-description-lg {
     font-size: 32px;
+    line-height: 32px;
   }
 
   .project-description a.project-btn {
-    padding: 16px 8px;
-    font-size: 8px;
+    padding: 16px 56px;
+    font-size: 16px;
   }
   .Project .column {
     display: block;
@@ -317,13 +401,17 @@ img.process-image {
   .landing-info h1 {
     font-size: 48px;
   }
+
   .project-info {
     height: 320px;
   }
 
 }
-@media only screen and (max-width : 940px) {
+@media only screen and (max-width : 1480px) {
   .Card .project-info {
    flex-direction: column;
+ }
+ .project-description {
+   padding-left: 29px;
  }
 }

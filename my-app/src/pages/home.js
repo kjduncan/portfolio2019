@@ -27,8 +27,8 @@ class Home extends Component {
               </div>
               <div className="is-two-fifths column">
                 <div className="landing-info">
-                  <Link className="nav-home" to="/">Katelyn Duncan</Link>
-                  <h1>Interaction Design</h1>
+                  <h1>Katelyn Duncan</h1>
+                  <h2>Experience Designer</h2>
                   <ul className="social">
                     <li>
                       <a href="mailto:duncan.katelynj@gmail.com"><img src={mail}/></a>

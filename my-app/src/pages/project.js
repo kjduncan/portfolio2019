@@ -30,7 +30,7 @@ class Project extends Component {
                 <h1>{this.props.project.title}</h1>
                 <h3> {this.props.project.attributes.type}</h3>
               </div>
-              <div className="project-description-lg column is-6 is-offset-3">
+              <div className="project-description-lg column is-8 is-offset-2">
                 <p>{this.props.project.attributes.description}</p>
               </div>
               <img className="column is-8 is-offset-2" src={this.props.project.attributes.imgTop}/>
@@ -39,11 +39,12 @@ class Project extends Component {
               <div className="project-title">
                 <h1>Project Summary</h1>
               </div>
-              <div className="column is-8 is-offset-2 summary">
+              <div className="column is-10 is-offset-1 summary">
 
                 <p className="summary">{this.props.project.attributes.summary}</p>
-                <a className="projectLink" href={this.props.project.attributes.siteLink}>{this.props.project.attributes.site}</a>
-                <a className="projectLink projectLinkSecondary" href="{this.props.project.attributes.siteLinkO}">{this.props.project.attributes.siteO}</a>
+                <div className="column is-4 is-offset-4">
+                <a className="projectLink" href={this.props.project.attributes.siteLink}>See It Here</a>
+                </div>
               </div>
 
               <div className="columns is-variable is-7">
@@ -59,7 +60,7 @@ class Project extends Component {
               <div className="project-title">
                 <h1>Process</h1>
               </div>
-              <div className="column is-8 is-offset-2">
+              <div className="column is-10 is-offset-1">
                 <p className="summary">{this.props.project.attributes.process}</p>
               </div>
               <div className="columns is-variable is-7">
@@ -80,18 +81,13 @@ class Project extends Component {
                 <div className="column is-4">
                   <p className="summary processSecondary">{this.props.project.attributes.processSecondary}</p>
                 </div>
-                <div className="column is-3 is-offset-3 process-image">
-                  <img src={this.props.project.attributes.processFourO}/>
-                </div>
-                <div className="column is-4">
-                  <p className="summary processSecondary">{this.props.project.attributes.processSecondaryO}</p>
-                </div>
+
 
               </div>
               <div className="project-title">
                 <h1>Result</h1>
               </div>
-              <div className="column is-8 is-offset-2">
+              <div className="column is-10 is-offset-1">
                 <p className="summary">{this.props.project.attributes.result}</p>
               </div>
               <img className="process-image" src={this.props.project.attributes.imgSrc}/>
@@ -111,8 +107,8 @@ class Project extends Component {
                   <img className="process-image" src={this.props.project.attributes.resultFour}/>
                 </div>
               </div>
-              <div className="column is-6 is-offset-3">
-                    <Link className="projectLink" to="/">&#11013; Back to Projects</Link>
+              <div className="column is-4 is-offset-4">
+                    <Link className="projectLink" to="/">Back to Projects</Link>
               </div>
               <div className="columns is-variable is-7">
                 <div className="column is-4 process-image">
