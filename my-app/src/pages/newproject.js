@@ -152,7 +152,8 @@ class NewProject extends Component {
 
                 </div>
                 <div className="column process-image is-6">
-                  <img className="img-padding" src={this.props.project.attributes.processOne}/>
+                  <img src={this.props.project.attributes.processOne}/>
+
                 </div>
                 <div className="column is-12 process-image margin-bottom">
                   <img src={this.props.project.attributes.processOneS}/>
@@ -165,7 +166,7 @@ class NewProject extends Component {
                 <div className="column is-6">
                   <p className="processTwo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processTwoInfo)}></p>
                 </div>
-                <div className="column is-4 process-image">
+                <div className="column is-6 process-image">
                   <img className="shadowNone" src={this.props.project.attributes.processTwo}/>
                 </div>
 
@@ -182,10 +183,22 @@ class NewProject extends Component {
               </div>
               <div className="columns is-variable is-7 processGroup">
                 <div className="column is-6">
-                  <p className="processThreeInfo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processFourInfo)}></p>
+                  <p className="processFourInfo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processFourInfo)}></p>
+
                 </div>
-                <div className="column is-6 process-image processThree">
-                  <p className="processThreeInfo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processFour)}></p>
+                <div className="column is-6 process-image processFour">
+                  <img src={this.props.project.attributes.processFive}/>
+                  <p className="processFour" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processFour)}></p>
+
+                </div>
+                <div className="columns is-variable is-7 processGroup">
+                  <div className="column is-6">
+                    <p className="processSix" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processSixInfo)}></p>
+                  </div>
+                  <div className="column is-4 process-image">
+                    <img src={this.props.project.attributes.processSix}/>
+                  </div>
+
                 </div>
 
               </div>

@@ -10,7 +10,7 @@ import Project from './pages/project.js';
 import NewProject from './pages/newproject.js';
 import About from './pages/about.js';
 import sideDoor from './images/sdlarge.png';
-import space from './images/space.png';
+import space from './images/space.gif';
 import veritas from './images/veritas.jpg';
 import transport from './images/knightBus.jpg';
 import credit from './images/creditfreezeform1.jpg';
@@ -65,7 +65,7 @@ import cathedral from './images/cathedralOfLearning.jpg';
 import welcome from './images/scavHuntWelcome.jpg';
 import transitMap from './images/transitMap.png';
 import draw from './images/draw.jpg';
-import affinity from './images/affinity.png';
+import affinity from './images/affinityMap.JPG';
 import storyboard from './images/storyboard.png';
 import rules from './images/rules.jpg';
 import huntResultOne from './images/huntResultOne.jpg';
@@ -87,6 +87,16 @@ import worbleAction from './images/worbleAction.png';
 import worbleSick from './images/worbleSick.png';
 import worbleVeripedia from './images/worbleVeripedia.png';
 import worbleProto from './images/worbleProto.png';
+import transportTheme from './images/transportTheme.png';
+import transportLandmark from './images/transportLandmarks.png';
+import transportConfirm from './images/transportConfirm.png';
+import transportInsight from './images/transportInsight.jpg';
+import ideaMatrix from './images/ideaMatrix.jpg';
+import transportStoryboard from './images/storyboards.jpg';
+import transportThink from './images/transportThinkAloud.png';
+import transportInvision from './images/transportInvision.JPG';
+
+
 
 
 let projects = [
@@ -115,7 +125,6 @@ let projects = [
         processTwoInfo: 'I created low fidelity wireframes for each page before moving on to mid and high fidelity mockups. I followed this process to obtain feedback early and iterate based on that feedback quickly.<strong> Medium and high fidelity mockups were created based on feedback from low fidelity wireframes.</strong>',
         processThree: sdStyle,
         processThreeInfo: '<strong>We created a living style guide on the web for this project from which we could pull components for our project.</strong> I started by creating a styleguide in illustrator that included typography, iconography, image sizes, and UI specifications. We then built it on the web and utilized these components throughout the project.',
-        processFour: sdElements,
         result: 'The result was an easy-to-use platform that effectively enabled users to buy and sell homes and to be connected with helpful resources throughout the process. The SideDoor user base increased consistently after implementing these changes and continued to grow over the course of the following year. ',
         resultOne: sdSold,
         resultOneInfo: 'Information for Users',
@@ -184,6 +193,45 @@ let projects = [
     }
   },
   {
+    title: 'Nimbus 05610',
+    slug: 'cmutransport',
+    attributes: {
+      description: 'Reimagining the marketing of CMU transportation through an interactive orientation scavenger hunt',
+      type: 'UX | User Research | Illustration',
+      imgSrc: transportProject,
+      summary: 'For this project, our team was tasked with conducting user research on the current state of the CMU transportation system and then developing a redesign to address glaring issues we uncovered. <strong>Our final design addressed the issue of visibility by offering an orientation scavenger to educate new members of the campus community about the transportation system.</strong> My role was to conduct user research and to create illustrations and iconography for the final UI design prototype. We used Tableu, Excel, Sketch, Figma, and Illustrator.',
+      problem: 'A wealth of transportation options are available to CMU students. However, a vast number of students are unaware of the options available to them, in particular the underutilized CMU Shuttle and escort services. This is compounded by low visibility and limited formal channels for promotion of the service around CMU. As a result, a majority of CMU students only learn about the service through word of mouth. <strong>Many students mentioned that the CMU shuttle and escort service wasn’t their primary mode of transportation unless it was the only option available to them. This was due to the service being unreliable, overcrowded, and confusing to navigate</strong>',
+      challenges: 'Based on preliminary research conducted by our team, a variety of pain points were identified. <strong>Our findings highlighted that knowledge of the shuttle system (or lack thereof) impacts the experience students and other CMU community members have with the shuttle service.</strong> This in turn heavily influences the usage of the service by the campus community. In particular, those who have a routine with the shuttle or escort service (implying a solid understanding of the system) expressed a positive experience with the current service as compared to those with a negative opinion of the system in part due to a lack of information regarding using the shuttle. We also discovered that many CMU community members used alternative transportation methods such as the <strong>city buses or walking as workarounds to their lack of knowledge regarding the existence and/or usability of the CMU shuttles and escorts. </strong>',
+      summaryOne:transportLandmark,
+      summaryOption: cathedral,
+      summaryThree: welcome,
+      process: '<strong>Our team utilized a variety of research methods over the course of several months to determine what type of intervention would be most suitable for this problem space.</strong> We conducted contextual interviews, think alouds and surveys to determine which pain points students were experiencing when interacting with the shuttle service. We wanted to tackle this issue in a fun and memorable way for members of the campus community.',
+      research: 'Throughout the course of our research we utilized both qualitative and quantitative methods. We started out examining analytics and log data from RideSystems, an app that allows riders to see schedules and track shuttles in real time. <strong>From this we learned that riderships was on a steady decline year over year.</strong>',
+      researchS: 'In order to examine the why behind this data, we moved forward with generative research, then evaluative methods to examine our proposed solution. <strong>We paid particular attention to how users were experiencing the current system and any workarounds they were required to employ in order to meet their daily transportation needs.</strong> Many users seemed to be unaware of or dissatisfied with the current shuttle and transportation. Through contextual inquiry, surveys, log data, and think alouds, we set out to understand why.',
+      processOne: transportInsight,
+      processOneS: affinity,
+      processTwo: ideaMatrix,
+      processTwoInfo: 'Based on the opportunities and insights gleaned from our generative research, we brainstormed various solutions. <strong>These ideas were placed on a Prioritization Matrix based on how much effort would be required to implement them as well as how much value they would provide to CMU students.</strong> We each voted for ideas we were interested in pursuing, then further discussed the ideas to narrow down to three.',
+      processOneInfo: 'We began by conducting six contextual inquiries and think alouds of the current RideSystems App for navigating the shuttle service  with current and potential riders of the CMU transportation system. Following each interview, the team came together for interpretation sessions where we refined the insights gleaned from each interview. <strong>We then printed all of our interview notes and created a large affinity diagram to analyze and develop insights.</strong>',
+      processThree: transportStoryboard,
+      processThreeInfo: 'We decided to use storyboarding as our method for needs validation. <strong>We created storyboards of a preferred future based on the findings from our initial research and ultimately determined that the primary problem was visibility and knwoledge of how the CMU transportation system worked.</strong>',
+      processFourInfo: 'The storyboarding activity validated our hypothesis of a need for a fun and easy way to learn about the CMU transportation system.<strong> We created low fidelity prototypes and conducted desirability studies via fifteen second tests in order to measure whether or not users were connecting with our idea.</strong> We also conducted think alouds to determine whether or not the flow of our application made sense.',
+      result: 'The result was an app based interactive orientation scavenger hunt prototype meant to educate new members of the campus community about the transportation and empower them to continue using it in the future. After using our prototype, users felt more confident using the transportation system. Our solution tackles the root of the problem the Graduate Student Assembly at CMU is attempting to solve: <strong>providing “...access to multiple kinds of reliable transportation that allow for safe, direct commutes to and from campus.”</strong>',
+      processFive: transportThink,
+      processSix: transportInvision,
+      processSixInfo:'Based on the feedback we received from our low fidelity prototypes, <strong>we created and medium fidelity prototype using Invision and conducted think alouds.</strong> All of our research and user testing insights culmitated in a final poster presentation to stakeholders. ',
+      resultOne: transportTheme,
+      resultOneInfo: 'Engaging Theme',
+      resultOneInfoS: 'On the day of the orientation scavenger hunt, players access this web-based app via the browser on their mobile phones. They are immediately pulled into the exciting world of Harry Potter and invited to embark on this great adventure. <strong>The theme enhances the immersive experience, making the daunting task of learning a new transportation system more accessible through playfulness.</strong>',
+      resultTwo: transportLandmark,
+      resultTwoInfo: 'Key Landmarks',
+      resultTwoInfoS: '<strong>Knowledge of routes and stops lowers the barrier of beginning to utilize the CMU shuttle and escort service.</strong> Players are given prompts that lead them to different landmarks around the city. They are able to find the landmarks on a map and determine the best route to get there. <strong>When entering the shuttle, players scan a QR code that saves their progress in the scavenger hunt. This is how the system will track who wins.</strong>',
+      resultThree: transportConfirm,
+      resultThreeInfoS: 'Once players reach a landmark, <strong>they are required to take a picture of their team with the landmark.</strong> Students then upload their picture to track their progress and save for a fun memento. The map players use in the game is a downloadable pdf for them to use in the future.'
+
+    }
+  },
+  {
     title: 'Space Exploration Project',
     slug: 'space',
     attributes: {
@@ -206,29 +254,6 @@ let projects = [
       processFour: planetHigh,
       processSecondary: 'Throughout ideation, it was important to constantly obtain feedback in order to further enhance usability, create a delightful experience, and to ensure that the information on the site would be easy to consume. I incorporated the feedback I received into the final design mockup.',
       result: 'The result was a single page web application with some cool illustration work, some animation to enhance the experience, and straight forward, easy to understand information about space.'
-    }
-  },
-  {
-    title: 'Nimbus 05610',
-    slug: 'cmutransport',
-    attributes: {
-      oldPage: true,
-      description: 'Reimagining the marketing of CMU transportation through an interactive orientation scavenger hunt',
-      type: 'UX | User Research | Illustration',
-      imgSrc: transportProject,
-      summary: 'For this project, our team was tasked with conducting user research on the current state of the CMU transportation system and then developing a redesign to address glaring issues we uncovered. Our final design was to address the issue of visibility by offering an orientation scavenger to educate new members of the campus community about the transportation system. My role was to conduct user research and to create illustrations and iconography for the final UI design prototype. We used Tableu, Excel, Sketch, Figma, and Illustrator.',
-      summaryOne:transitMap,
-      summaryOption: cathedral,
-      summaryThree: welcome,
-      process: 'Our team conducted contextual interviews, think alouds and surveys to determine which pain points students were experiencing when interacting with the shuttle service. We created storyboards of a preferred future based on the findings from our initial research and ultimately determined that the primary problem was visibility and knwoledge of how the CMU transportation system worked. We wanted to tackle this issue in a fun and memorable way for members of the campus community.',
-      processOne: affinity,
-      processTwo: draw,
-      processThree: storyboard,
-      processFourO: rules,
-      processSecondaryO: 'We created an initial prototype for testing to determine whether or not users responseded positively to the idea and found the experience engaging. 5 second tests were conducted to validate that users had positive impressions about the solution. Based on the results of the 5 second tests the design artifact was updated and we conducted think alouds with users to ensure that usability issues were eliminated.',
-      result: 'The result was an app based interactive orientation scavenger hunt to educate new members of the campus community about the transportation and empower them to continue using it in the future.',
-      resultOne: huntResultOne,
-      resultTwo: huntResultTwo
     }
   },
   {
