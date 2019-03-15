@@ -50,7 +50,7 @@ import veritasInbox from './images/veritasInbox.png';
 import veripedia from './images/veripedia.jpg';
 import worble from './images/worble.svg';
 import egg from './images/egg.svg';
-import ideas from './images/ideas.JPG';
+import ideas from './images/ideas.jpg';
 import testOne from './images/testO.JPG';
 import testTwo from './images/testT.jpg';
 import react from './images/veritasReact.png';
@@ -78,7 +78,15 @@ import cfProject from './images/creditfreezeproject.png';
 import sdSold from './images/sellSD.png';
 import sdList from './images/createListing.png';
 import sdProfile from './images/userProfile.png';
-import journeyMap from './images/CustomerJourneyMap.jpg';
+import journeyMap from './images/sdJourney.png';
+import veritasMovie from './images/VeritasSlow.gif';
+import ariWelcome from './images/ariWelcome.png';
+import worbleCustom from './images/worbleCustom.png';
+import worbleInbox from './images/worbleInbox.png';
+import worbleAction from './images/worbleAction.png';
+import worbleSick from './images/worbleSick.png';
+import worbleVeripedia from './images/worbleVeripedia.png';
+import worbleProto from './images/worbleProto.png';
 
 
 let projects = [
@@ -129,6 +137,53 @@ let projects = [
     }
   },
   {
+    title: 'Veritas',
+    slug: 'veritas',
+    attributes: {
+      description: 'A native ios game in response to misinformation spread through social networks',
+      type: 'Game Design | User Research | Illustration | React Native Code',
+      imgSrc: worbleProject,
+      imgTopSm: veritasMovie,
+      summary: 'Veritas is an app-based game I created along with a team of designers and developers in hopes of providing a fun and easy intervention to combat the pressing societal problem of misinformation. Specifically, we decided to <strong>tackle the spread of misinformation through social networks. The purpose of this game is to empower users to recognize misinformation in their daily lives. My role was to conduct user research, game ideation and development, and to create illustrations and iconography for the UI</strong>. We used Figma, Sketch, Illustrator, Invision, and ReactNative. Read more on <a className="site-link" href="https://medium.com/@asitparida/veritas-avatar-based-intervention-for-misinformation-12f97bc26171">Medium</a>.',
+      problem: 'Anyone can post anything to a vast audience with little regulation via social media. A 2018 Pew Research Survey found that <strong>two thirds of Americans get news from social media even though they have concerns about its accuracy</strong>, and about 1 in every 4 American adults has shared fabricated content on social media (Matsa). Social media can create filter bubbles, which concentrate extreme beliefs and make people vulnerable to misinformation by surrounding them with people whose beliefs mirror their own, steering them in an extremist direction and away from objective fact.',
+      challenges: "“(Technologies such as social media) lets you <strong>go off with like-minded people, so you're not mixing and sharing and understanding other points of view </strong... It's super important. It's turned out to be more of a problem than I, or many others, would have expected.” -Bill Gates",
+      challengesTwo: 'In conducting a review of psychological literature, we found several major cognitive biases that make people vulnerable to fake news. Because of motivated reasoning, we are <strong>often more critical of news articles that we are motivated to disbelieve, while we are less critical of evidence that aligns with our beliefs</strong>. Likewise, confirmation bias: the idea that <strong>we seek out information that is in line with our beliefs while ignoring that which runs counter</strong>. The “sleeper effect” causes us to <strong>dissociate an article’s persuasive message from the source over time, giving unfounded power to unreliable sources.</strong>',
+      siteLink: 'https://medium.com/@asitparida/veritas-avatar-based-intervention-for-misinformation-12f97bc26171',
+      site: 'Read More On Medium',
+      siteLinkO: 'https://projects.invisionapp.com/share/PKP3I9WDGBT#/330953902_Page1',
+      siteO: 'Invision Prototype',
+      summaryThree: veripedia,
+      process: 'We began by conducting secondary research, pouring over existing literature related to misinformation and embedded game design. <strong>We spent a lot of time in ideation, exploring how to most effectively combat misinformation using embedded design and ultimately decided to make a game.</strong> Our user research consisted of three rounds of testing, one low-fidelity prototypes and two high fidelity prototypes. The feedback we received enabled us to iterate on our design early and quickly in order to make the experience more user centered.',
+      research: 'For the research phase, we focused on academic articles, think alouds, and desirability studies. <strong>We paid particular attention to how users were responding to the worble they created, and their level of trust built over time playing the game.</strong> Many users connected with the worble, finding fun and approachable. An interesting insight we found from think alouds was the emotional connection users were having with their worble. <strong>Most users we tested were upset when their worble got sick and became more motivated to verify their information moving forward.</strong> This validated our hypotheses related to ownership and allowed us to move forward with the Veripedia as a resource.',
+      processOneS: worbleProto,
+      processOneInfo: 'After developing a deeper understanding of embedded game design, we set out to examine how our experience would persuade users. We spent a lot of time discussing the story of the game and how users would progress. From this, <strong>we created low fidelity prototypes which allowed us to test the flow of our game very quickly with several users.</strong>',
+      processFour: '<iframe width="442" height="935" src="//invis.io/DPPCOCAU4M3" frameborder="0" allowfullscreen></iframe>',
+      processFourInfo: 'After refining the game flow based on user feedback, we created a medium fidelity prototype using Invision.',
+      processFourO: react,
+      researchS: 'Following our third round of testing, the development team built an early stage react native prototype for future testing.',
+      processOne: ideas,
+      processTwo: testTwo,
+      processTwoInfo: '<strong>Through low fidelity prototype think alouds, we were able to find and refine flaws in our storyline that left users confused.</strong> We also found that users were connecting with the worble via personalization.',
+      result: 'The result was an app game prototype built using reactNative with the goal of combating misinformation via social media. Players are given a creature to take care of and taught what to do through friends in the game. Eventually, players realize that their friends may be giving them bad information and are offered an excyclopedia type resource to check new information against. <strong>We hope that this game will enhance skills related to verifying information day to day and empower users to better discern reliable sources.</strong> Our plan for the future is to keep building and testing and eventually launch the app on iOS.',
+      resultOneSm: ariWelcome,
+      resultOneInfo: 'An assistant to ground players',
+      resultOneInfoS: 'Players are first introduced to the game functions through Ari, <strong>a neutral AI character who provides the player with tips and brief explanations on how to proceed in the game.</strong> This manifestation of a ‘neutral’ source provides a figure players can trust and ultimately helps the them feel comfortable as the storyline begins involving misinformation.',
+      summaryOne: worbleCustom,
+      resultTwoInfo: 'Personalization',
+      resultTwoInfoS: 'Players are given an egg to take care of. In order to develop attatchment between players and their worble, we allow them customize their egg and name their worble itself. <strong>These personalizing events tap into the pyschological concepts of perceived ownership and connection with things that are similar to oneself.</strong> Through these mechanisms, we hope to increase the efficacy of the persuasive message. ',
+      resultThree: worbleInbox,
+      resultThreeInfo: 'Mirroring Social Media',
+      resultThreeInfoS: 'Throughout the beginning stages of the game, players are only given accurate information to build trust. <strong>After accomplishing several low challenge tasks, players are introduced to a new friend via an inbox messaging system.</strong> The friend offers them a tip on what their Worble might enjoy eating. Players are then encouraged to take this action. ',
+      resultFour: worbleAction,
+      resultFourInfoS: 'The first piece of advice players receive from a friend is accurate information and <strong>results in them leveling up and obtaining a new skill</strong> to practice with their worble. This offers a level of credibility to the friend, similar to credibility we give to those we interact with on social media.',
+      resultFive: worbleSick,
+      resultFiveInfo: 'Introducing Misinformation',
+      resultFiveInfoS: 'Players are soon given a new piece of information from their friend. <strong>This time, the action results in their worble getting sick.</strong> As a result, players are set back in the game for a certain period of time while their worble heals. Through this interaction, we hope to encourage more vigilance as players receive information in the future.',
+      resultSix: worbleVeripedia,
+      resultSixInfoS: 'Ari quickly appears with a new resource for players: the Veripedia. This is a constant and credible source of truth that players are encouraged to refer back to whenever they receive information. <strong>As they move forward in the game, players are able to measure new information against what they find in the Veripedia, allowing them to make well-informed decisions as they care for their worble.</strong>'
+    }
+  },
+  {
     title: 'Space Exploration Project',
     slug: 'space',
     attributes: {
@@ -151,31 +206,6 @@ let projects = [
       processFour: planetHigh,
       processSecondary: 'Throughout ideation, it was important to constantly obtain feedback in order to further enhance usability, create a delightful experience, and to ensure that the information on the site would be easy to consume. I incorporated the feedback I received into the final design mockup.',
       result: 'The result was a single page web application with some cool illustration work, some animation to enhance the experience, and straight forward, easy to understand information about space.'
-    }
-  },
-  {
-    title: 'Veritas',
-    slug: 'veritas',
-    attributes: {
-      oldPage: true,
-      description: 'A native ios game in response to misinformation spread through social networks',
-      type: 'Game Design | User Research | Illustration | React Native Code',
-      imgSrc: worbleProject,
-      imgTopSm: veritasUI,
-      summary: 'Veritas is a game I created along with a team of designers and developers in hopes of providing a fun and easy way to address the pressing societal problem of misinformation. Specifically, we decided to tackle the spread of misinformation through social networks. The purpose of this game is to empower users to recognize misinformation in their daily lives. My role was to conduct user research, game ideation and development, and to create illustrations and iconography for the UI. We used Figma, Sketch, Illustrator, Invision, and ReactNative',
-      siteLink: 'https://medium.com/@asitparida/veritas-avatar-based-intervention-for-misinformation-12f97bc26171',
-      site: 'Read More On Medium',
-      siteLinkO: 'https://projects.invisionapp.com/share/PKP3I9WDGBT#/330953902_Page1',
-      siteO: 'Invision Prototype',
-      summaryOne: ari,
-      summaryThree: veripedia,
-      process: 'We spent a lot of time in ideation, exploring how to most effectively combat misinformation using embedded design and ultimately decided to make a game. We did three rounds of testing, one low-fidelity and two high fidelity, primarily using thinkalouds and desirability studies. The feedback we received enabled us to iterate on our design early and quickly in order to make the experience more user centered.',
-      processTwo: testOne,
-      processThree: testTwo,
-      processFourO: react,
-      processSecondaryO: 'Following our third round of testing, the development team built an early stage react native prototype for future testing.',
-      processOne: ideas,
-      result: 'The result was a native app game prototype to combat misinformation mirroring social media. Players are given a creature to take care of and taught what to do through friends in the game. Eventually, players realize that their friends may be giving them bad information and are offered an excyclopedia type resource to check new information against. We hope that this game will enhance skills related to verifying information day to day. Our plan for the future is to keep building and testing and eventually launch the app on iOS.'
     }
   },
   {

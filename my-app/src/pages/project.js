@@ -90,7 +90,6 @@ class Project extends Component {
               <div className="column is-10 is-offset-1">
                 <p className="summary">{this.props.project.attributes.result}</p>
               </div>
-              <img className="process-image" src={this.props.project.attributes.imgSrc}/>
               <div className="columns is-variable is-7">
                 <div className="column is-6 process-image">
                   <img src={this.props.project.attributes.resultOne}/>

@@ -240,6 +240,7 @@ img.process-image {
 }
 .Project .process-image img {
   padding-bottom: 40px;
+  padding: 0;
 }
 .Project a.projectLink {
   font-family: 'Fira Sans', sans-serif;
@@ -322,6 +323,7 @@ img.process-image {
   color: #4f4f4f;
   padding-top: 0;
   font-weight: 600;
+  text-align: left;
 }
 .newProject .details p {
   font-family: 'Fira Sans', sans-serif;
@@ -345,6 +347,7 @@ img.process-image {
   color: #4f4f4f;
   padding-top: 0;
   font-weight: 600;
+  padding-left: 0;
 }
 .newProject .processGroup p {
   font-family: 'Fira Sans', sans-serif;
@@ -357,6 +360,23 @@ img.process-image {
 }
 .browse {
   margin: 80px 0;
+}
+.margin-bottom {
+  margin-bottom: 80px;
+}
+.newProject img.img-padding {
+  padding: 80px;
+  object-fit: contain;
+}
+.newProject p a.site-link {
+  color: #334431;
+  font-weight: 600;
+}
+a {
+  transition: 500ms;
+}
+a:hover {
+  border-bottom: 2px solid #334431;
 }
 
 /* mobile syltes*/
@@ -404,6 +424,22 @@ img.process-image {
 
   .project-info {
     height: 320px;
+  }
+  .newProject .processGroup p {
+    font-size: 16px;
+    padding: 0 16px;
+  }
+  .Project .process-image img {
+    padding: 40px 24px
+  }
+  .newProject .processGroup h3 {
+    text-align: center;
+  }
+  .newProject .details h3 {
+    text-align: center;
+  }
+  .newProject img {
+    box-shadow: none;
   }
 
 }
