@@ -109,7 +109,6 @@ class NewProject extends Component {
                 <div className="columns is-variable is-7 processGroup">
                   <div className="column is-6 process-image">
                     <img src={this.props.project.attributes.resultFour}/>
-                    <p>Test</p>
                   </div>
                   <div className="column is-6">
                   <p className="resultFourInfoS" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.resultFourInfoS)}></p>

@@ -154,7 +154,7 @@ ul.menu {
 }
 ul.menu li {
   margin-left: 24px;
-  font-size: 24px;
+  font-size: 16px;
 
 }
 ul.menu li a {
@@ -227,7 +227,7 @@ ul.menu li a {
   padding-bottom: 0;
 }
 .footer ul.menu li {
-  font-size: 24px;
+  font-size: 16px;
 }
 .footer ul.menu li a {
   color: #334431 !important;
@@ -344,10 +344,10 @@ ul.menu li a {
   margin-left: 32px;
 }
 ul.menu li {
-  font-size: 16px;
+  font-size: 24px;
 }
 .footer ul.menu li {
-  font-size: 16px;
+  font-size: 24px;
 }
 .Project .project-description-lg {
   font-size: 48px;
@@ -584,7 +584,7 @@ a:hover {
   }
 
   .project-info {
-    height: 320px;
+    height: 400px;
   }
   .newProject .processGroup p {
     font-size: 16px;
