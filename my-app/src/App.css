@@ -150,6 +150,7 @@ ul.menu {
   justify-content: flex-end;
   padding-right: 24px;
     width: 100%;
+    margin-top: 8px;
 }
 ul.menu li {
   margin-left: 24px;
