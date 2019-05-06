@@ -105,6 +105,10 @@
   padding: 0 40px;
   margin-bottom: 80px;
 }
+.landing-info h1 {
+  font-size: 32px;
+  line-height: 40px;
+}
 .landing-info a {
   text-decoration: none;
   color: #334431;
@@ -221,6 +225,9 @@ ul.menu li a {
   justify-content: flex-start !important;
   padding-bottom: 0;
 }
+.footer ul.menu li {
+  font-size: 24px;
+}
 .footer ul.menu li a {
   color: #334431 !important;
 }
@@ -335,6 +342,12 @@ ul.menu li a {
 .Project ul.menu a.nav-home {
   margin-left: 32px;
 }
+ul.menu li {
+  font-size: 16px;
+}
+.footer ul.menu li {
+  font-size: 16px;
+}
 .Project .project-description-lg {
   font-size: 48px;
   line-height: 56px;
@@ -400,6 +413,7 @@ ul.menu li a {
   margin-bottom: 40px;
   font-weight: 700;
   text-align: left;
+  margin-left: 0;
 }
 .About p.aboutMe {
   font-family: 'Fira Sans', sans-serif;
@@ -516,8 +530,13 @@ a:hover {
 /* mobile syltes*/
 @media only screen and (max-width : 480px) {
   .About p.aboutMe {
-    font-size: 24px;
+    font-size: 18px;
     padding: 0 32px;
+    line-height: 32px;
+  }
+  .About h1.hello {
+    font-size: 32px;
+    margin-left: 32px;
   }
   .gif-stuff {
     height: 320px;
