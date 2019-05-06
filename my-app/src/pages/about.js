@@ -29,12 +29,12 @@ class About extends Component {
                 </li>
               </ul>
             </div>
-            <div className="column is-10 is-offset-1">
+            <div className="column is-10 is-offset-1 is-mobile">
               <div className="columns profile">
-                <div className="column is-5">
+                <div className="column is-5 is-three-quarters-mobile">
                 <img src={kate}></img>
                 </div>
-                <div className="column is-7">
+                <div className="column is-7 is-full-mobile">
                 <h1 className="hello">Hi, Im Katelyn</h1>
                 <p className="aboutMe">I am an experience designer with over 3 years of experience designing and building digitally-focused products and services. I am currently based in Pittsburgh studying human computer interaction as a graduate student at Carnegie Mellon University.</p>
                 <p className="aboutMe">
