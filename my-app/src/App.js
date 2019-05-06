@@ -79,7 +79,7 @@ import sdSold from './images/sellSD.png';
 import sdList from './images/createListing.png';
 import sdProfile from './images/userProfile.png';
 import journeyMap from './images/sdJourney.png';
-import veritasMovie from './images/VeritasSlow.gif';
+import veritasMovie from './images/happyworble.gif';
 import ariWelcome from './images/ariWelcome.png';
 import worbleCustom from './images/worbleCustom.png';
 import worbleInbox from './images/worbleInbox.png';
@@ -95,6 +95,14 @@ import ideaMatrix from './images/ideaMatrix.jpg';
 import transportStoryboard from './images/storyboards.jpg';
 import transportThink from './images/transportThinkAloud.png';
 import transportInvision from './images/transportInvision.JPG';
+import spaceCode from './images/spaceCode.png';
+import timGravelle from './images/tgHome.png';
+import tgCode from './images/tgCode.png';
+import tgContact from './images/tgContact.png';
+import tgList from './images/tgList.png';
+import tgProperties from './images/tgProperties.png';
+import tgProject from './images/tgProject.png';
+import worbleFull from './images/VeritasSlow.gif';
 
 
 
@@ -103,9 +111,10 @@ let projects = [
   {
     title: 'SideDoor Inc',
     slug: 'sidedoor',
+    categories: ['Design', 'Code'],
     attributes: {
         description: 'An online marketplace for all things real estate',
-        type: 'UX | UI | Design | Frontend Code',
+        type: ['UX', 'UI', 'Design', 'Frontend Code'],
         imgSrc: sdProject,
         imgTop: sideDoorLg,
         summary: 'The ultimate goal of SideDoor was to <strong>empower users in the real estate market to complete transactions on their own</strong>, ultimately saving around 6% of their home value. My role was to design and develop the UI alongside one backend developer. We used Bootstrap, LESS, CakePhp, Illustrator, and Photoshop.',
@@ -148,9 +157,10 @@ let projects = [
   {
     title: 'Veritas',
     slug: 'veritas',
+    categories: ['Design'],
     attributes: {
       description: 'A native ios game in response to misinformation spread through social networks',
-      type: 'Game Design | User Research | Illustration | React Native Code',
+      type: ['Game Design', 'User Research', 'React Native'],
       imgSrc: worbleProject,
       imgTopSm: veritasMovie,
       summary: 'Veritas is an app-based game I created along with a team of designers and developers in hopes of providing a fun and easy intervention to combat the pressing societal problem of misinformation. Specifically, we decided to <strong>tackle the spread of misinformation through social networks. The purpose of this game is to empower users to recognize misinformation in their daily lives. My role was to conduct user research, game ideation and development, and to create illustrations and iconography for the UI</strong>. We used Figma, Sketch, Illustrator, Invision, and ReactNative. Read more on <a className="site-link" href="https://medium.com/@asitparida/veritas-avatar-based-intervention-for-misinformation-12f97bc26171">Medium</a>.',
@@ -164,13 +174,12 @@ let projects = [
       summaryThree: veripedia,
       process: 'We began by conducting secondary research, pouring over existing literature related to misinformation and embedded game design. <strong>We spent a lot of time in ideation, exploring how to most effectively combat misinformation using embedded design and ultimately decided to make a game.</strong> Our user research consisted of three rounds of testing, one low-fidelity prototypes and two high fidelity prototypes. The feedback we received enabled us to iterate on our design early and quickly in order to make the experience more user centered.',
       research: 'For the research phase, we focused on academic articles, think alouds, and desirability studies. <strong>We paid particular attention to how users were responding to the worble they created, and their level of trust built over time playing the game.</strong> Many users connected with the worble, finding fun and approachable. An interesting insight we found from think alouds was the emotional connection users were having with their worble. <strong>Most users we tested were upset when their worble got sick and became more motivated to verify their information moving forward.</strong> This validated our hypotheses related to ownership and allowed us to move forward with the Veripedia as a resource.',
-      processOneS: worbleProto,
       processOneInfo: 'After developing a deeper understanding of embedded game design, we set out to examine how our experience would persuade users. We spent a lot of time discussing the story of the game and how users would progress. From this, <strong>we created low fidelity prototypes which allowed us to test the flow of our game very quickly with several users.</strong>',
-      processFour: '<iframe width="442" height="935" src="//invis.io/DPPCOCAU4M3" frameborder="0" allowfullscreen></iframe>',
-      processFourInfo: 'After refining the game flow based on user feedback, we created a medium fidelity prototype using Invision.',
+      processFiveS: worbleFull,
+      processFourInfo: 'After refining the game flow based on user feedback, we created a medium fidelity prototype using Invision for another round of testing. <strong>Our final, high fidelity prototype was then built using reactNative.</strong>',
       processFourO: react,
       researchS: 'Following our third round of testing, the development team built an early stage react native prototype for future testing.',
-      processOne: ideas,
+      processOne: worbleProto,
       processTwo: testTwo,
       processTwoInfo: '<strong>Through low fidelity prototype think alouds, we were able to find and refine flaws in our storyline that left users confused.</strong> We also found that users were connecting with the worble via personalization.',
       result: 'The result was an app game prototype built using reactNative with the goal of combating misinformation via social media. Players are given a creature to take care of and taught what to do through friends in the game. Eventually, players realize that their friends may be giving them bad information and are offered an excyclopedia type resource to check new information against. <strong>We hope that this game will enhance skills related to verifying information day to day and empower users to better discern reliable sources.</strong> Our plan for the future is to keep building and testing and eventually launch the app on iOS.',
@@ -195,9 +204,10 @@ let projects = [
   {
     title: 'Nimbus 05610',
     slug: 'cmutransport',
+    categories: ['Design'],
     attributes: {
       description: 'Reimagining the marketing of CMU transportation through an interactive orientation scavenger hunt',
-      type: 'UX | User Research | Illustration',
+      type: ['UX', 'User Research', 'Illustration'],
       imgSrc: transportProject,
       summary: 'For this project, our team was tasked with conducting user research on the current state of the CMU transportation system and then developing a redesign to address glaring issues we uncovered. <strong>Our final design addressed the issue of visibility by offering an orientation scavenger to educate new members of the campus community about the transportation system.</strong> My role was to conduct user research and to create illustrations and iconography for the final UI design prototype. We used Tableu, Excel, Sketch, Figma, and Illustrator.',
       problem: 'A wealth of transportation options are available to CMU students. However, a vast number of students are unaware of the options available to them, in particular the underutilized CMU Shuttle and escort services. This is compounded by low visibility and limited formal channels for promotion of the service around CMU. As a result, a majority of CMU students only learn about the service through word of mouth. <strong>Many students mentioned that the CMU shuttle and escort service wasn’t their primary mode of transportation unless it was the only option available to them. This was due to the service being unreliable, overcrowded, and confusing to navigate</strong>',
@@ -228,41 +238,58 @@ let projects = [
       resultTwoInfoS: '<strong>Knowledge of routes and stops lowers the barrier of beginning to utilize the CMU shuttle and escort service.</strong> Players are given prompts that lead them to different landmarks around the city. They are able to find the landmarks on a map and determine the best route to get there. <strong>When entering the shuttle, players scan a QR code that saves their progress in the scavenger hunt. This is how the system will track who wins.</strong>',
       resultThree: transportConfirm,
       resultThreeInfoS: 'Once players reach a landmark, <strong>they are required to take a picture of their team with the landmark.</strong> Students then upload their picture to track their progress and save for a fun memento. The map players use in the game is a downloadable pdf for them to use in the future.'
-
     }
   },
   {
     title: 'Space Exploration Project',
     slug: 'space',
+    categories: ['Design', 'Code'],
     attributes: {
       oldPage: true,
       description: 'A single page application for learning about space',
-      type: 'UI | UX | Design | React Code',
-      imgSrc: spaceProject,
+      type: ['UI', 'UX', 'Design', 'React Code'],
       imgTop: space,
-      summary: 'My task was to create an informational tool that was easy to use and easy to consume. I chose to create a single page web app all about the planets in our solar system. Users are able to explore each planet and learn more about them. I used react, Sketch and Illustrator. Take a look live at the link below.',
+      imgSrc: spaceProject,
+      summary: 'My task was to create an informational tool that was easy to use and easy to consume. I chose to create a single page web app all about the planets in our solar system using react. Users are able to explore each planet and learn more about them. I used Sketch for my prototyping and mockups and Illustrator to create all of the visual assets. Take a look live at the link below.',
       siteLink: 'https://kjduncan.github.io/learn-space/',
       site: 'https://kjduncan.github.io/learn-space/',
-      summaryOne: spaceLand,
-      summaryOption: spaceLandThree,
-      summaryTwo: spaceLandTwo,
-      summaryThree: spaceShip,
-      process: 'I started out with lo fidelity sketches for the ideation phase. This allowed me to test out a variety of ideas and obtain feedback. Once I settled on a general layout, I chose the UI elements including typography and colors. I then created all of the space design elements, including the planets and the spaceship using Illustrator. Finally, I used sketch to create digital mockups for feedback prior to building.',
+      process: 'I started out with low fidelity sketches for the ideation phase. This allowed me to test out a variety of ideas and obtain feedback. Once I settled on a general layout, I chose the UI elements including typography and colors. I then created all of the space design elements, including the planets and the spaceship using Illustrator. Finally, I used sketch to create digital mockups for feedback prior to building.',
       processOne: planetLow,
       processTwo: planetMid,
       processThree: planetMidT,
-      processFour: planetHigh,
-      processSecondary: 'Throughout ideation, it was important to constantly obtain feedback in order to further enhance usability, create a delightful experience, and to ensure that the information on the site would be easy to consume. I incorporated the feedback I received into the final design mockup.',
-      result: 'The result was a single page web application with some cool illustration work, some animation to enhance the experience, and straight forward, easy to understand information about space.'
+      processFour: spaceCode,
+      processSecondary: 'I coded the site using react, taking advantage of components to simplify the development process and make the site scalable in the future. I enhanced the experience with css animations. ',
+    }
+  },
+  {
+    title: 'Tim Gravelle Real Estate',
+    slug: 'timgravelle',
+    categories: ['Code'],
+    attributes: {
+      oldPage: true,
+      description: 'A small business real estate website',
+      type: ['UI', 'UX', 'Wordpress', 'PHP'],
+      imgTop: timGravelle,
+      imgSrc: tgProject,
+      summary: 'The Real Montana is a boutique real estate firm based in Whitefish Montana. I was hired as the frontend developer on this project. We were asked to create a website for a small boutique real estate firm in Whitefish Montana. The client wanted us to show off their services, allow users to search for properties, and highlight contact information. I used wordpress to build the site and Illustrator and Photosphop to collaborate on the design work.',
+      siteLink: 'https://therealmontana.com/',
+      site: 'https://kjduncan.github.io/learn-space/',
+      process: 'The designer and I worked closesly together and with the client to determine what would best suit their needs. I offered recommendations about how the site should be built and what technologies would best suit their needs and their budget. We determined that Wordpress would be the most sustainable solution for them. I implemented a very simple template that could be easily customized and then built the site on top of that. I connected the site to an MLS plugin that would allow users to easily browse properties. I also implemented a contact form for users to get in touch and start the process of buying or selling a home.',
+      processOne: tgContact,
+      processTwo: tgList,
+      processThree: tgProperties,
+      processFour: tgCode,
+      processSecondary: 'Wordpress allowed for the site to be more accessible for the client moving forward. I built it so they would be able to make changes to the content on their own and easily list new properties as needed.',
     }
   },
   {
     title: 'Credit Freeze',
     slug: 'creditfreeze',
+    categories: ['Case Study'],
     attributes: {
       oldPage: true,
       description: 'A one stop shop to manage and freeze your credit online',
-      type: 'UI | UX | User Research',
+      type: ['UI', 'UX', 'User Research'],
       imgSrc: cfProject,
       summary: 'When the Equifax data breach happened, I was one of many worried about the security of my credit moving forward. I went through the confusing process of trying to figure out how to freeze my credit with the top three agencies. I wanted to create an interface that cleaned up much of the clutter found on the three major credit agencies sites and credit freeze forms. I combined all of the information that each agency required to freeze your credit into one simple and straightforward form. I used Illustrator and Sketch.',
       summaryOne: creditTwo,

@@ -14,7 +14,86 @@
   flex-direction: column !important;
 }
 
+ a.cardGroup {
+  text-decoration: none;
+  color: #4f4f4f;
+}
 
+.margin-bottom {
+  margin-bottom: 40px;
+}
+
+
+/*chevron*/
+.chev-wrap {
+  position: absolute;
+    width: 24px;
+    height: 24px;
+    bottom: 8%;
+    right: 50%;
+}
+
+.chevron {
+  position: absolute;
+  width: 24px;
+  height: 8px;
+  opacity: 0;
+  /* transform: scale3d(0.5, 0.5, 0.5); */
+  animation: move 3s ease-out infinite;
+}
+
+
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  /* 33% {
+    opacity: 1;
+    transform: translateY(30px);
+  } */
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px);
+  }
+}
+
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
 /*Home Page Styles*/
 .landing-info {
   display: flex;
@@ -22,7 +101,7 @@
   justify-content: center;
   font-family: 'Noto Serif', serif;
   color: #000000;
-  height: 75vh;
+  height: 100vh;
   padding: 0 40px;
   margin-bottom: 80px;
 }
@@ -57,7 +136,7 @@ a.nav-home {
 }
 .gif-stuff {
   background-color: #f2cbbc;
-  height: 75vh;
+  height: 100vh;
   margin-bottom: 80px;
 }
 ul.menu {
@@ -94,6 +173,37 @@ ul.menu li a {
     padding-right: 16px;
 }
 
+.filter-buttons {
+  margin-bottom: 16px;
+}
+
+.filter-buttons li {
+  display: inline-block;
+}
+.filter-buttons button {
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid transparent;
+  margin-right: 12px;
+  font-size: 18px;
+  font-family: 'Fira Sans', sans-serif;
+  margin: 4px 16px;
+  transition: .3s;
+  padding: 4px 0;
+}
+.filter-buttons button:hover {
+  background: transparent;
+  border-bottom: 4px solid #334431;
+  cursor: pointer;
+}
+
+.filter-buttons button.active {
+  background-color: #334431;
+  padding: 4px 16px;
+  color: #fff;
+  margin-right: 12px;
+}
+
 /*footer styles*/
 .footer {
   padding: 0 !important;
@@ -109,7 +219,7 @@ ul.menu li a {
 }
 .footer ul.menu {
   justify-content: flex-start !important;
-
+  padding-bottom: 0;
 }
 .footer ul.menu li a {
   color: #334431 !important;
@@ -135,6 +245,9 @@ ul.menu li a {
   border-radius: 12px;
   font-family: 'Fira Sans', sans-serif;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .columns {
   flex-wrap: wrap;
@@ -175,6 +288,10 @@ ul.menu li a {
 .project-description {
   padding: 8px;
   padding-right: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
 }
 .project-description p {
   font-size: 18px;
@@ -192,11 +309,17 @@ ul.menu li a {
   width: 100%;
   font-weight: 700;
   transition: 0.3s;
+  text-align: center;
 }
 .project-description a.project-btn:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-bottom: 0;
 }
 /*project page*/
+.Project.color-block {
+  background-color: #e6af4b;
+  height: 800px;
+}
 .Project ul.menu {
   display: flex;
   flex-direction: row;
@@ -222,20 +345,21 @@ ul.menu li a {
 }
 .Project .summary {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 32px;
-  margin-bottom: 80px;
+  font-size: 24px;
+  margin-bottom: 200px;
   text-align: center;
   padding: 0;
 }
 .Project p.processSecondary {
   text-align: left;
+  font-size: 24px;
 }
 .Project .process-image {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-img.process-image {
+.process-image {
   padding-bottom:40px;
 }
 .Project .process-image img {
@@ -262,6 +386,10 @@ img.process-image {
   margin-left: 56px;
 }
 /*About*/
+.About .profile {
+  display: flex;
+  flex-direction: row;
+}
 .About .container {
   margin-bottom: 160px !important;
 }
@@ -269,17 +397,17 @@ img.process-image {
   font-family: 'Noto Serif', serif;
   color: #4f4f4f;
   font-size: 64px;
-  margin-bottom: 104px;
-  font-weight: 700
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-align: left;
 }
 .About p.aboutMe {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 40px;
+  font-size: 24px;
   color: #4f4f4f;
   text-align: left;
   margin-bottom: 40px;
-  line-height: 56px;
-  font-weight: bold;
+  line-height: 40px;
   padding: 0;
 }
 .About ul.menu li a {
@@ -300,11 +428,12 @@ img.process-image {
 .newProject {
   color: #4f4f4f;
 }
-.newProject img {
+/* .newProject img {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
-}
+} */
 .newProject img.shadowNone {
   box-shadow: none;
+  padding: 32px 0;
 }
 .newProject .details {
   flex-direction: row !important;
@@ -351,11 +480,10 @@ img.process-image {
 }
 .newProject .processGroup p {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   padding: 24px 0;
 }
 .newProject .researchMargin {
-  margin-top: 80px;
   margin-bottom: 120px;
 }
 .browse {
@@ -376,7 +504,13 @@ a {
   transition: 500ms;
 }
 a:hover {
-  border-bottom: 2px solid #334431;
+  border-bottom: 4px solid #334431;
+}
+.paddingSpace {
+  padding: 40px 0;
+}
+.marginSpace {
+  margin-bottom: 80px;
 }
 
 /* mobile syltes*/
@@ -390,6 +524,12 @@ a:hover {
   }
   .landing-info {
     height: 320px;
+  }
+  .footer .landing-info {
+    height: 120px;
+  }
+  .footer ul.menu {
+    padding-bottom: 120px;
   }
   .project-description {
     padding-right: 0;
@@ -411,7 +551,7 @@ a:hover {
     line-height: 32px;
   }
 
-  .project-description a.project-btn {
+  .Project a.projectLink {
     padding: 16px 56px;
     font-size: 16px;
   }
@@ -420,6 +560,7 @@ a:hover {
   }
   .landing-info h1 {
     font-size: 48px;
+    line-height: 56px;
   }
 
   .project-info {
@@ -446,6 +587,9 @@ a:hover {
 @media only screen and (max-width : 1480px) {
   .Card .project-info {
    flex-direction: column;
+ }
+ .Card .project-title {
+   width: 100% !important;
  }
  .project-description {
    padding-left: 29px;

@@ -18,6 +18,9 @@ class Project extends Component {
                   <a href="https://drive.google.com/open?id=1aOa1IHc5hr92wdlKwThYCk4a-wuCY-lx" target="_blank">Resume</a>
                 </li>
                 <li>
+                  <a href="https://medium.com/@duncan.katelynj" target="_blank">Blog</a>
+                </li>
+                <li>
                   <Link to="/about">About</Link>
                 </li>
                 <li>
@@ -26,26 +29,22 @@ class Project extends Component {
               </ul>
             </div>
             <div className="column">
-              <div className="project-title">
-                <h1>{this.props.project.title}</h1>
-                <h3> {this.props.project.attributes.type}</h3>
-              </div>
-              <div className="project-description-lg column is-8 is-offset-2">
-                <p>{this.props.project.attributes.description}</p>
-              </div>
+
               <img className="column is-8 is-offset-2" src={this.props.project.attributes.imgTop}/>
               <img className="column is-4 is-offset-4" src={this.props.project.attributes.imgTopSm}/>
 
               <div className="project-title">
                 <h1>Project Summary</h1>
               </div>
+            </div>
               <div className="column is-10 is-offset-1 summary">
 
-                <p className="summary">{this.props.project.attributes.summary}</p>
+                <p className="margin-bottom">{this.props.project.attributes.summary}</p>
                 <div className="column is-4 is-offset-4">
                 <a className="projectLink" href={this.props.project.attributes.siteLink}>See It Here</a>
                 </div>
               </div>
+              <div className="column">
 
               <div className="columns is-variable is-7">
                 <div className="column is-6 process-image">
@@ -60,8 +59,8 @@ class Project extends Component {
               <div className="project-title">
                 <h1>Process</h1>
               </div>
-              <div className="column is-10 is-offset-1">
-                <p className="summary">{this.props.project.attributes.process}</p>
+              <div className="column is-10 is-offset-1 summary">
+                <p>{this.props.project.attributes.process}</p>
               </div>
               <div className="columns is-variable is-7">
                 <div className="column is-4 process-image">
@@ -74,7 +73,7 @@ class Project extends Component {
                   <img src={this.props.project.attributes.processThree}/>
                 </div>
               </div>
-              <div className="columns is-variable is-7">
+              <div className="columns is-variable is-7 paddingSpace">
                 <div className="column is-7 process-image">
                   <img src={this.props.project.attributes.processFour}/>
                 </div>
@@ -84,30 +83,8 @@ class Project extends Component {
 
 
               </div>
-              <div className="project-title">
-                <h1>Result</h1>
-              </div>
-              <div className="column is-10 is-offset-1">
-                <p className="summary">{this.props.project.attributes.result}</p>
-              </div>
-              <div className="columns is-variable is-7">
-                <div className="column is-6 process-image">
-                  <img src={this.props.project.attributes.resultOne}/>
-                </div>
-                <div className="column is-6 process-image">
-                  <img src={this.props.project.attributes.resultTwo}/>
-                </div>
-              </div>
-              <div className="columns is-variable is-7">
-                <div className="column is-6">
-                  <img className="process-image" src={this.props.project.attributes.resultThree}/>
-                </div>
-                <div className="column is-6">
-                  <img className="process-image" src={this.props.project.attributes.resultFour}/>
-                </div>
-              </div>
               <div className="column is-4 is-offset-4">
-                    <Link className="projectLink" to="/">Back to Projects</Link>
+                    <Link className="marginSpace projectLink" to="/">Back to Projects</Link>
               </div>
               <div className="columns is-variable is-7">
                 <div className="column is-4 process-image">
@@ -148,6 +125,9 @@ class Project extends Component {
               <ul className="menu">
                 <li>
                   <a href="https://drive.google.com/open?id=1aOa1IHc5hr92wdlKwThYCk4a-wuCY-lx" target="_blank">Resume</a>
+                </li>
+                <li>
+                  <a href="https://medium.com/@duncan.katelynj" target="_blank">Blog</a>
                 </li>
                 <li>
                   <Link to="/about">About</Link>
