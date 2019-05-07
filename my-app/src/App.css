@@ -18,6 +18,9 @@
   text-decoration: none;
   color: #4f4f4f;
 }
+ a.cardGroup:hover {
+   border-bottom: none;
+ }
 
 .margin-bottom {
   margin-bottom: 40px;
