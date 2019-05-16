@@ -26,6 +26,31 @@
   margin-bottom: 40px;
 }
 
+/*findings*/
+ul.findings p.title {
+  margin-bottom: 0;
+}
+ul.findings p {
+  padding-bottom: 0 !important;
+}
+ul.findings li {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+}
+h3.title {
+  color: #4f4f4f;
+  font-family: 'Noto Serif SC', serif;
+  margin-top: 160px;
+  padding-left: 0;
+}
+.padL {
+  padding-left: 16px !important;
+}
+.mTop {
+  margin-top: 132px;
+}
+
 
 /*chevron*/
 .chev-wrap {
@@ -401,6 +426,15 @@ ul.menu li {
 }
 .Project a.projectLinkSecondary {
   margin-left: 56px;
+}
+p {
+  font-size: 24px !important;
+}
+p.caption {
+  font-size: 16px !important;
+  padding-top: 8px !important;
+  margin-bottom: 40px;
+  margin-left: 8px;
 }
 /*About*/
 .About .profile {

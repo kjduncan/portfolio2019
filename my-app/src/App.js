@@ -55,6 +55,7 @@ import testOne from './images/testO.JPG';
 import testTwo from './images/testT.jpg';
 import react from './images/veritasReact.png';
 import creditOne from './images/creditfreezeformF.jpg';
+import creditQuestion from './images/creditfreezeform3.jpg';
 import creditTwo from './images/creditfreezeformT.jpg';
 import creditThree from './images/creditfreezeformR.jpg';
 import creditTask from './images/creditTask.png';
@@ -66,7 +67,6 @@ import welcome from './images/scavHuntWelcome.jpg';
 import transitMap from './images/transitMap.png';
 import draw from './images/draw.jpg';
 import affinity from './images/affinityMap.JPG';
-import storyboard from './images/storyboard.png';
 import rules from './images/rules.jpg';
 import huntResultOne from './images/huntResultOne.jpg';
 import huntResultTwo from './images/huntResultTwo.jpg';
@@ -103,6 +103,30 @@ import tgList from './images/tgList.png';
 import tgProperties from './images/tgProperties.png';
 import tgProject from './images/tgProject.png';
 import worbleFull from './images/VeritasSlow.gif';
+import wProject from './images/womanProject.png';
+import chaHome from './images/chachaHome.png';
+import wAffinity from './images/affinity.jpg';
+import wPersonaOne from './images/wPersonaOne.png';
+import wPersonaTwo from './images/wPersonaTwo.png';
+import wMapOne from './images/wMapOne.png';
+import wMapTwo from './images/wMapTwo.png';
+import smartQ from './images/smartQA.png';
+import appointment from './images/appointment.png';
+import doctReq from './images/doctorRequest.png';
+import patReq from './images/patientRequest.png';
+import checklist from './images/checklist.png';
+import wStory from './images/gStory.png';
+import wStoryT from './images/gStory2.png';
+import reverseW from './images/reverse.jpg';
+import coDesignO from './images/codesign1.jpg';
+import coDesignT from './images/codesign2.jpg';
+import coDesignTh from './images/codesign3.jpg';
+import wLow from './images/Frame.png';
+import wLowO from './images/Frame1.png';
+import wLowT from './images/Frame2.png';
+import trust from './images/trust.png';
+import simplify from './images/simplify.png';
+import power from './images/power.png';
 
 
 
@@ -150,6 +174,96 @@ let projects = [
         resultFiveInfo: 'User Dashboard',
         resultFiveInfoS: '<strong>The dashboard is place for users to create a profile, organize their favorite listings, create and manage listings, schedule showing times, and manage offers.</strong> I created unique dashboards based on whether the user was a buyer, seller, or professional affiliate. If a user was more than one type (seller and affiliate), I created a toggle feature so users could see both dashboards in the same place.',
         resultFiveInfoSTwo: 'When building the dashboard, I was concerned about overwhelming the user with too much information at once. <strong>I utilized design tools such as color, font size, and iconography to highlight importance such as actionable items, and organized information based on the type of user.</strong>'
+
+
+    }
+  },
+  {
+    title: 'Chacha',
+    slug: 'chacha',
+    categories: ['Design', 'Code'],
+    attributes: {
+        description: 'Redesigning the gynecological onboarding process',
+        type: ['UX', 'UI', 'Design', 'Rapid Prototyping', 'User Research'],
+        imgSrc: wProject,
+        imgTopSm: chaHome,
+        summary: 'Over the course of 15 weeks, I worked on a small team with one other designer and our advisor to <strong>understand barriers women face when accessing healthcare</strong>. This was a passion project of ours, something that hit very close to home, and we were excited to use design thinking to create a meaningful intervention in this space. My role was User Researcher and UX Designer. Our primary goal was to <strong>alleviate some of the fear, stress, confusion, and burden women feel when navigating their health.</strong>',
+        problem: 'Getting specialized female reproductive care is an important part of any women’s health. Studies show, however, that a high percentage of women have fears about the care they receive from gynecologists and reluctance to access care. <strong>So how can we help women feel more confident about managing their feminine health?</strong>',
+        challenges: 'A significant <strong>barrier that women face when accessing medical care is fear</strong>. They are afraid facing judgement from their doctor, their friends, or their family. They are afraid that the procedures will hurt. They are afraid of the costs that they may incure.',
+        challengesTwo: 'Womens Health is a space that is very complex and unique, <strong>influenced by many different systems each with their own complexities</strong>. As we began this project, it was very important to clearly define our focus area, be specific about our goals, and <strong>overcome our desire to solve everything.</strong>',
+        summaryOne: appointment,
+        summaryTwo: filter,
+        summaryThree: propertyProfile,
+        process: 'We began by talking to professionals in the womens health space. This, coupled with extensive secondary research into the current state, enriched our knowledge of the problem space.',
+        research: 'Our research phase began with the goal of better understanding the barriers women are facing when accessing healthcare services and what current interventions look like.',
+        researchS: 'We interviewed 3 medical professionals, 3 health educators, 1 doula, and surveyed over 400 women to better understand how women view and manage their feminine health. We analyzed survey results and affinitized our interview data points to be able to identify patterns and insights. We developed personas and user journey maps to better visualize what we found.',
+        processOne: wAffinity,
+        processOneInfoSub: '<strong>Personas and User Journey Maps are helpful tools in better identifying and uncovering painpoints that users experience within a system.</strong> Through these exercises, we were able to develop ideas based on key opportunity areas where an intervention would be most effective. We analyzed the context, delivery method, and technology we would use for each case.',
+        insightOne: 'Reactive vs proactive',
+        insightOneInfo: 'Many women don’t feel a need to go to the gynecologist regularly because they generally feel healthy and don’t have any pressing medical issues that need to be addressed.',
+        insightOneInfoQ: '“I have not had any issues that would require me to visit a gynecologist.”',
+        insightTwo: 'Fear is a primary barrier',
+        insightTwoInfo: 'From concerns about feeling judged to wondering whether it will hurt, women generally avoid the gynecologist because of fear.',
+        insightTwoInfoQ: '“I’m scared - it seems awkward and uncomfortable.”',
+        insightThree: 'Power imbalances impact doctor patient relationship',
+        insightThreeInfo: 'The procedures commonly performed at the gynecologist oftne put women in a vulnerable position. They are unsure of what they should expect from their gynecologist and feel unprepared to even ask.',
+        insightThreeInfoQ: '“It feels like a black box. I’m unsure what I should even be getting out of the experience.”',
+        insightFour: 'Information can be overwhelming and unreliable',
+        insightFourInfo: 'We found that the primary resource women are utilizing is the internet. Anonymity, freedom from judgement, and the over all convenience were key motivators behind this behavior.',
+        insightFourInfoQ: 'There is a wide array of information available to access here, however, it is often difficult to determine what is accurate and will be helpful in their decision-making processes.',
+        insightPOne: wPersonaOne,
+        insightPTwo: wPersonaTwo,
+        insightPThree: wMapOne,
+        insightPFour: wMapTwo,
+        insightFive: 'Need Validation',
+        insightFiveInfo: 'With key insights uncovered, we moved forward with ideation. We illustrated preferred futures through storyboarding and used those storyboards to speed date and validate user needs.',
+        insightFiveP: wStory,
+        insightFivePS: wStoryT,
+        insightSix: 'Ideation',
+        insightSixInfo: 'After validating user needs, we began ideating concepts for possible solutions. We conducted a reversed assumptions exercise to better understand our own assumptions of the problem space and dive into possible solutions. This exercise allowed us to more deeply analyze our insights, breathe new life into our ideas, and uncover additional opportunities that we had overlooked.',
+        insightSixP: reverseW,
+        insightSixInfoS: 'We also conducted a codesign session with members of the community ranging in age from early 20s to early 60s. The group included designers, health educators, and gynecologists. Through this workshop, we were able to develop a better understand of the barriers women are facing when accessing healthcare and how they would like these barriers to be addressed within the healthcare system. These learnings helped us identify our design priorities moving forward into prototyping.',
+        insightSixPS: coDesignO,
+        insightSixPT: coDesignT,
+        insightSixPTh: coDesignTh,
+        insightSeven: 'Rapid Prototyping & Testing',
+        insightSevenInfo: 'Through an interactive design process, we quickly moved between paper to digital prototypes as well as testing with users in order to quickly learn what was valuable. We developed and tested three initial concepts with women who reported feeling uncomfortable and unconfident with their gynecological care.',
+        insightSevenInfoS: 'Onboarding',
+        insightSevenInfoP: wLow,
+        insightSevenInfoT: 'What to expect at your next appointment',
+        insightSevenInfoPS: wLowO,
+        insightSevenInfoTh: 'Initial consultation and empowerment',
+        insightSevenInfoPTh: wLowT,
+        insightEight: 'Final Design Decisions',
+        insightEightInfo: 'Our ideation and rapid prototyping and testing exercises allowed us to identify key features and user values that would be later incorporated into our final design decisions. We identified 3 priorities that women held in making decisions for their on feminine care.',
+        decisionOne: 'Our ideation and rapid prototyping and testing exercises allowed us to identify key features and user values that would be later incorporated into our final design decisions. We identified 3 priorities that women held in making decisions for their on feminine care.',
+        processOneInfo: 'We synthesized our findings in an affinity diagram, uncovering key insights that would guide our decisions moving forward and inspire our final design concept.',
+        decision: 'Simplify the process',
+        decisionInfo: 'Women don’t want to repeat sensitive information several times when going through the process of managing their feminine health. By simplifying the process, we are able to relieve unnecessary stress and inconvenience.',
+        decisionOneP: trust,
+        decisionTwo: 'Simplify the process',
+        decisionTwoInfo: 'Women don’t want to repeat sensitive information several times when going through the process of managing their feminine health. By simplifying the process, we are able to relieve unnecessary stress and inconvenience.',
+        decisionTwoP: simplify,
+        decisionThree: 'Empower women to be more prepared',
+        decisionThreeInfo: 'Being better prepared for their gynecological appointments will enable women to get more out of the experience, ask important questions, and obtain the information they need to make crucial decisions regarding their sexual and reproductive health.',
+        decisionThreeP: power,
+        result: 'The result is Chacha a <strong>chatbot app designed to empower women in navigating and managing their feminine health</strong>. Chacha answers users’ questions, encourages users to find providers, and supports appointment scheduling and onboarding with providers. Additionally, Chacha helps users feel more prepared for appointments by keeping track of users’ list of questions they may have for their medical provider.',
+        resultOne: smartQ,
+        resultOneInfo: 'Intelligent Q&A',
+        resultOneInfoS: 'Users can ask Chacha questions related to their reproductive or sexual health. This information remains confidential unless they decide to share with their provider.',
+        resultTwoInfo: 'Finding providers and scheduling appointments',
+        resultTwoInfoS: 'Chacha recommends doctors in their area. Users can browse providers, read reviews, and choose a provider that works best for them.',
+        resultTwoInfoSTwo: 'Chacha then allows users to schedule an appointment and connect with their chosen provider. ',
+        resultTwo: doctReq,
+        resultThree: doctReq,
+        resultThreeInfo: 'Onboarding users with their provider',
+        resultThreeInfoS: 'Once an appointment has been made, Chacha helps ease the onboarding process between patients and providers. Based on the patient’s scheduled appointment procedures, providers can request a patient’s medical history in advance.',
+        resultFour: patReq,
+        resultFourInfoS: 'Patients can easily share medical history that is often sensitive and uncomfortable to share in person.',
+        resultFive: checklist,
+        resultFiveInfo: 'Preparing users for their appointment',
+        resultFiveInfoS: 'Chacha’s helps users keep track of questions they want to ask their provider at their next appointment. ',
+        resultFiveInfoSTwo: 'The function also helps users browse a list of popular questions to inspire questions on topics they may not have been aware of.'
 
 
     }
@@ -287,23 +401,36 @@ let projects = [
     slug: 'creditfreeze',
     categories: ['Case Study'],
     attributes: {
-      oldPage: true,
+
       description: 'A one stop shop to manage and freeze your credit online',
       type: ['UI', 'UX', 'User Research'],
       imgSrc: cfProject,
-      summary: 'When the Equifax data breach happened, I was one of many worried about the security of my credit moving forward. I went through the confusing process of trying to figure out how to freeze my credit with the top three agencies. I wanted to create an interface that cleaned up much of the clutter found on the three major credit agencies sites and credit freeze forms. I combined all of the information that each agency required to freeze your credit into one simple and straightforward form. I used Illustrator and Sketch.',
+      summary: 'When the Equifax data breach happened, I was one of many worried about the security of my credit moving forward. <strong>I went through the confusing process of trying to figure out how to freeze my credit with the top three agencies.</strong> I wanted to create an interface that cleaned up much of the clutter found on the three major credit agencies sites and credit freeze forms. I combined all of the information that each agency required to freeze your credit into one simple and straightforward form. I used Illustrator and Sketch.',
+      problem: "In 2017 Equifax had a large data breach, compromising millions of individual's crucial private financial information. As a result, <strong>these individuals became both vulnerable and susceptible to fraudulent activity including identity theft.</strong> It seemed that there wasn't much anyone could do about it and it felt frustrating that nobody was holding Equifax accountable in any way.",
+      challenges: "Every time you freeze or unfreeze your credit, it costs $10. There is no way to create an account or save credit card information for future transactions (but also this should be free!). <strong>I kept wishing that there was just one place to apply to freeze my credit, save my security PINs, and manage the freezing and unfreezing process in the future.</strong> I set out to create an interface that cleaned up much of the clutter found on the three major credit agencies' sites and credit freeze forms. <strong>My goal was for users to be able to go to this site to apply to freeze their credit at all three major credit agencies</strong>, pay the fees to do so, and then return to this site to unfreeze or freeze in the future.",
       summaryOne: creditTwo,
       summaryTwo: creditOne,
       summaryThree: creditThree,
-      process: 'I began by researching the current process that users have to go through to freeze their credit. Based on this information and an initial task analysis, I created and performed think aloud tests with users to determine what the primary paint points were. The results of these tests informed my design process from ideation through the final prototype.',
-      processOne: creditCurrent,
+      process: 'I began by <strong>researching the current process that users have to go through to freeze their credit.</strong> Based on this information and an initial task analysis, I created and performed think aloud tests with users to determine what the primary paint points were. The results of these tests informed my design process from ideation through the final prototype.',
+      research: '<strong>There is a lot of inconsistency between the three systems</strong> and a huge reliance on the user to remember and save vital security information across the three systems for future use. This <strong>creates a significant amount of cognitive load for users during an already stressful and frustrating experience.</strong> Then, to top it all off, users are expected to enter their credit card information into sites that leaked their information to begin with. Because the systems are slightly different, but require similar information, it is likely that users will become confused and frustrated as they work through the task of freezing and unfreezing their credit.',
+      processOneS: creditCurrent,
       processTwo: creditTask,
+      processTwoInfo: 'I created a task flow chart for a user who is trying to freeze their credit in order to protect their personal security from fraud and identity theft. <strong>The environment and stress levels will vary from user to user</strong>, however, it is reasonable to assume that this is a stressful situation given that users personal information has been compromised and they are having to take steps to protect themselves.',
       processThree: creditThink,
-      processFourO: creditMobile,
-      processSecondaryO: 'My initial user tests revealed that a primary pain point was having to create several different accounts and remember several different PINs in order to manage ones credit. I worked to solve for these in my final design by creating one seamless user flow for all three credit agencies.',
-      result: 'The result is a platform where users can manage their credit with all three credit agencies in one place. Users are able to freeze and unfreeze their credit easily without having to remember three different PINs or three different account credentials. The reduces cognitive load and creates ease of use during an otherwise stressful stituation.',
-      resultOne: creditThree,
-      resultTwo: creditOne
+      processThreeInfo: 'My initial user tests revealed that <strong>a primary pain point was having to create several different accounts and remember several different PINs in order to manage ones credit.</strong> I worked to solve for these in my final design by creating one seamless user flow for all three credit agencies.',
+      result: 'The result is <strong>a platform where users can manage their credit with all three credit agencies in one place.</strong> Users are able to freeze and unfreeze their credit easily without having to remember three different PINs or three different account credentials. The reduces cognitive load and creates ease of use during an otherwise stressful stituation.',
+      resultOne: credit,
+      resultOneInfo: 'A Single Site',
+      resultOneInfoS: 'Users will have the ability to use one site to manage all three credit freezing processes',
+      resultTwo: creditQuestion,
+      resultTwoInfo: 'Simplified and Secure Information Gathering',
+      resultTwoInfoS:'Upon signing up, users will input personal information required for freezing credit. <strong>This is only required one time.</strong>',
+      resultThree: creditQuestion,
+      resultThreeInfo: 'Identity Verification',
+      resultThreeInfoS: '<strong>Users will verify their identity by answering security questions related to their financial history.</strong> This mirrors questions major credit agencies use to verify identity.',
+      resultFour: creditOne,
+      resultFourInfo: 'Dashboard',
+      resultFourInfoS: "<strong>Users will have a dashboard to manage their credit freezes.</strong> They can freeze and unfreeze each agency individually. The system remembers their PIN for them so they don't have to"
 
     }
   }

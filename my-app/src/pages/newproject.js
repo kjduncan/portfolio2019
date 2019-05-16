@@ -50,17 +50,21 @@ class NewProject extends Component {
                 <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.summary)} />
 
               </div>
-              <div className="column is-12 details">
-                <h3 className="column is-3">Problem Space</h3>
-                <div className="challenge column is-8">
-                <p className="problem is-8" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.problem)} />
+              <div className="column is-6 is-offset-6 details">
+                <h3 className="column is-12">Problem Space</h3>
+              </div>
+              <div className="column is-6 is-offset-6 details">
+                <div className="challenge column is-12 padL">
+                  <p className="problem research is-12" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.problem)} />
                 </div>
               </div>
-              <div className="column is-12 details">
-                <h3 className="column is-3">Challenges</h3>
-                <div className="challenge column is-8">
-                  <p className="problem is-8" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.challenges)} />
-                  <p className="problem is-8" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.challengesTwo)} />
+              <div className="column is-6 is-offset-6 details">
+                <h3 className="column is-12">Challenges</h3>
+              </div>
+              <div className="column is-6 is-offset-6 details">
+                <div className="challenge column is-12 padL">
+                  <p className="problem research is-12" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.challenges)} />
+                  <p className="problem researchS is-12" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.challengesTwo)} />
                 </div>
               </div>
 
@@ -92,6 +96,8 @@ class NewProject extends Component {
                 <div className="column is-6">
                 <h3 className="resultTwoInfo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.resultTwoInfo)}></h3>
                 <p className="resultTwoInfoS" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.resultTwoInfoS)}></p>
+                <p className="resultTwoInfoSTwo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.resultTwoInfoSTwo)}></p>
+
                 </div>
               </div>
 
@@ -146,23 +152,26 @@ class NewProject extends Component {
               <div className="column is-10 is-offset-1 summary">
                 <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.process)}></p>
               </div>
-              <div className="column is-12 details researchMargin">
-                <h3 className="column is-3">Background Research</h3>
-                <div className="challenge column is-8">
-                  <p className="problem research is-8" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.research)} />
-                  <p className="problem researchS is-8" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.researchS)} />
+              <div className="column is-6 is-offset-6 details">
+                <h3 className="column is-12">Background Research</h3>
+              </div>
+              <div className="column is-6 is-offset-6 details researchMargin">
+                <div className="challenge column is-12 padL">
+                  <p className="problem research is-12" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.research)} />
+                  <p className="problem researchS is-12" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.researchS)} />
                 </div>
               </div>
 
               <div className="columns is-variable is-7 processGroup">
+              <div className="column process-image is-6">
+                <img className="shadowNone" src={this.props.project.attributes.processOne}/>
+
+              </div>
                 <div className="column is-6">
                   <p className="processOneInfoS" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processOneInfo)}></p>
 
                 </div>
-                <div className="column process-image is-6">
-                  <img className="shadowNone" src={this.props.project.attributes.processOne}/>
 
-                </div>
                 <div className="column is-12 process-image margin-bottom">
                   <img className="shadowNone" src={this.props.project.attributes.processOneS}/>
                 </div>
@@ -170,25 +179,217 @@ class NewProject extends Component {
               </div>
 
 
-              <div className="columns is-variable is-7 processGroup">
-                <div className="column is-6">
-                  <p className="processTwo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processTwoInfo)}></p>
+{this.props.project.attributes.insightPOne &&
+              <div className="columns is-variable is-full processGroup">
+                <div className="column process-image is-6">
+                  <img className="shadowNone" src={this.props.project.attributes.insightPOne}/>
+                  <img className="shadowNone" src={this.props.project.attributes.insightPThree}/>
                 </div>
+                <div className="column is-6">
+                  <p className="processOneInfoS" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processOneInfoSub)}></p>
+                </div>
+              </div>
+            }
+            {this.props.project.attributes.insightPThree &&
+              <div className="columns is-variable is-full processGroup">
+                <div className="column process-image is-6">
+                  <img className="shadowNone" src={this.props.project.attributes.insightPTwo}/>
+                  <img className="shadowNone" src={this.props.project.attributes.insightPFour}/>
+                </div>
+              </div>
+            }
+
+            {this.props.project.attributes.insightOne &&
+
+              <div className="columns is-variable is-full processGroup">
+                <div className="column process-image is-6 is-offset-6">
+                  <h3 className="title"> Key Findings</h3>
+                  <ul className="findings">
+                    <li>
+                      <div className="column is-4">
+                        <p className="title">Finding 1.</p>
+                      </div>
+                      <div className="column is-8">
+                        <p className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightOne)}></p>
+                        <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightOneInfo)}></p>
+                        <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightOneInfoQ)}></p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="column is-4">
+                        <p className="title">Finding 2.</p>
+                      </div>
+                      <div className="column is-8">
+                        <p className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightTwo)}></p>
+                        <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightTwoInfo)}></p>
+                        <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightTwoInfoQ)}></p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="column is-4">
+                        <p className="title">Finding 3.</p>
+                      </div>
+                      <div className="column is-8">
+                        <p className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightThree)}></p>
+                        <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightThreeInfo)}></p>
+                        <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightThreeInfoQ)}></p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="column is-4">
+                        <p className="title">Finding 4.</p>
+                      </div>
+                      <div className="column is-8">
+                        <p className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightFour)}></p>
+                        <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightFourInfo)}></p>
+                        <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightFourInfoQ)}></p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            }
+            {this.props.project.attributes.insightFive &&
+              <div className="columns is-variable is-full processGroup">
+                <div className="column process-image is-6 title mTop">
+                  <img className="shadowNone" src={this.props.project.attributes.insightFiveP}/>
+                  <img className="shadowNone" src={this.props.project.attributes.insightFivePS}/>
+                </div>
+                <div className="column is-6">
+                  <h3 className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightFive)}></h3>
+                  <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightFiveInfo)}></p>
+                  </div>
+                </div>
+            }
+            {this.props.project.attributes.insightSix &&
+              <div className="columns is-variable is-full processGroup">
+                <div className="column process-image is-6 title mTop">
+                  <img className="shadowNone" src={this.props.project.attributes.insightSixP}/>
+                </div>
+                <div className="column is-6">
+                  <h3 className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightSix)}></h3>
+                  <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightSixInfo)}></p>
+                </div>
+              </div>
+            }
+            {this.props.project.attributes.insightSixPS &&
+            <div className="columns is-variable is-full processGroup">
+              <div className="column process-image is-6 title mTop">
+                <img className="shadowNone" src={this.props.project.attributes.insightSixPS}/>
+                <img className="shadowNone" src={this.props.project.attributes.insightSixPT}/>
+                <img className="shadowNone" src={this.props.project.attributes.insightSixPTh}/>
+              </div>
+              <div className="column is-6 mTop">
+                <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightSixInfoS)}></p>
+              </div>
+            </div>
+          }
+          {this.props.project.attributes.insightSevenInfoS &&
+            <div className="columns is-variable is-full processGroup">
+            <div className="column is-6">
+              <img src={this.props.project.attributes.insightSevenInfoP}/>
+              <p className="caption" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightSevenInfoS)}></p>
+              <img src={this.props.project.attributes.insightSevenInfoPS}/>
+              <p className="caption" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightSevenInfoT)}></p>
+              <img src={this.props.project.attributes.insightSevenInfoPTh}/>
+              <p className="caption" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightSevenInfoTh)}></p>
+            </div>
+              <div className="column is-6">
+                <h3 dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightSeven)}></h3>
+                <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightSevenInfo)}></p>
+              </div>
+            </div>
+          }
+          {this.props.project.attributes.insightEight &&
+            <div className="columns is-variable is-full processGroup">
+              <div className="column is-6 is-offset-6">
+                <h3 dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightEight)}></h3>
+                <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightEightInfo)}></p>
+              </div>
+            </div>
+          }
+
+          {this.props.project.attributes.decisionOne &&
+
+            <div className="columns is-variable is-full processGroup">
+
+              <div className="column is-12">
+                <ul className="findings">
+                  <li>
+                    <div className="column is-4">
+                      <img className="shadowNone" src={this.props.project.attributes.decisionOneP}/>
+                    </div>
+                    <div className="column is-6 is-offset-2">
+                      <div className="column is-4">
+                        <p className="title">Priority 1.</p>
+                      </div>
+                      <div className="column is-12">
+                        <p className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.decision)}></p>
+                        <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.decisionInfo)}></p>
+                      </div>
+                      </div>
+                  </li>
+                  <li>
+                    <div className="column is-4">
+                      <img className="shadowNone" src={this.props.project.attributes.decisionTwoP}/>
+                    </div>
+                    <div className="column is-6 is-offset-2">
+                      <div className="column is-4">
+                        <p className="title">Priority 2.</p>
+                      </div>
+                      <div className="column is-12">
+                        <p className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightdecisionTwo)}></p>
+                        <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.decisionTwoInfo)}></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="column is-4">
+                      <img className="shadowNone" src={this.props.project.attributes.decisionThreeP}/>
+                    </div>
+                    <div className="column is-6 is-offset-2">
+                      <div className="column is-4">
+                        <p className="title">Priority 3.</p>
+                      </div>
+                      <div className="column is-12">
+                        <p className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.decisionThree)}></p>
+                        <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.decisionThreeInfo)}></p>
+                        <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.decisionThreeInfoQ)}></p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          }
+
+
+          {this.props.project.attributes.processTwo && this.props.project.attributes.processTwoInfo &&
+              <div className="columns is-variable is-7 processGroup">
                 <div className="column is-6 process-image">
                   <img className="shadowNone" src={this.props.project.attributes.processTwo}/>
                 </div>
+                <div className="column is-6">
+                  <p className="processTwo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processTwoInfo)}></p>
+                </div>
+
 
               </div>
+            }
+            {this.props.project.attributes.processThree && this.props.project.attributes.processThreeInfo &&
 
               <div className="columns is-variable is-7 processGroup">
-                <div className="column is-6">
-                  <p className="processThreeInfo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processThreeInfo)}></p>
-                </div>
                 <div className="column is-6 process-image processThree">
                   <img className="shadowNone" src={this.props.project.attributes.processThree}/>
                 </div>
+                <div className="column is-6">
+                  <p className="processThreeInfo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processThreeInfo)}></p>
+                </div>
+
 
               </div>
+            }
+            {this.props.project.attributes.processFourInfo && this.props.project.attributes.processFive &&
               <div className="columns is-variable is-7 processGroup">
                 <div className="column is-6">
                   <p className="processFourInfo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processFourInfo)}></p>
@@ -199,23 +400,22 @@ class NewProject extends Component {
                   <img className="column is-10" src={this.props.project.attributes.processFiveS}/>
                 </div>
                 <div className="columns is-variable is-7 processGroup">
-                  <div className="column is-6">
-                    <p className="processSix" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processSixInfo)}></p>
-                  </div>
                   <div className="column is-4 process-image">
                     <img className="shadowNone" src={this.props.project.attributes.processSix}/>
                   </div>
+                  <div className="column is-6">
+                    <p className="processSix" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processSixInfo)}></p>
+                  </div>
+
 
                 </div>
 
               </div>
+            }
 
               <div className="column is-4 is-offset-4 browse">
                     <Link className="projectLink" to="/">Back to Projects</Link>
               </div>
-
-
-
             </div>
           </div>
           </div>

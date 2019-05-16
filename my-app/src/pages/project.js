@@ -40,9 +40,11 @@ class Project extends Component {
               <div className="column is-10 is-offset-1 summary">
 
                 <p className="margin-bottom">{this.props.project.attributes.summary}</p>
+              {this.props.project.attributes.siteLink &&
                 <div className="column is-4 is-offset-4">
                 <a className="projectLink" href={this.props.project.attributes.siteLink}>See It Here</a>
                 </div>
+              }
               </div>
               <div className="column">
 
