@@ -305,7 +305,6 @@ ul.menu li a {
 .project-title {
   display: flex;
   flex-direction: column;
-
 }
 .project-title h1 {
   font-family: 'Noto Serif', serif;
@@ -330,7 +329,7 @@ ul.menu li a {
   height: 200px;
 }
 .project-description p {
-  font-size: 18px;
+  font-size: 18px!important;
   line-height: 24px;
   padding-bottom: 24px;
 }
@@ -368,6 +367,25 @@ ul.menu li a {
   padding-right: 0;
   padding-bottom: 16px;
 }
+.Project .project-title h1 {
+  font-size: 40px;
+  text-align: left;
+}
+.project-title-sec h1 {
+  text-align: center!important;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Noto Serif', serif;
+}
+.project-title-large {
+  display: flex;
+  flex-direction: column;
+}
+.project-title-large h1 {
+  font-size: 64px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+}
 .Project ul.menu a.nav-home {
   margin-left: 32px;
 }
@@ -387,10 +405,13 @@ ul.menu li {
 }
 .Project .summary {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 24px;
-  margin-bottom: 200px;
-  text-align: center;
+  font-size: 32px;
+  margin-bottom: 160px;
+  text-align: left;
   padding: 0;
+}
+.Project .summary p {
+  font-size: 28px!important;
 }
 .Project p.processSecondary {
   text-align: left;
@@ -401,12 +422,18 @@ ul.menu li {
   flex-direction: column;
   justify-content: space-between;
 }
+.sumGroup {
+  padding-left: 16px!important;
+}
 .process-image {
   padding-bottom:40px;
 }
 .Project .process-image img {
   padding-bottom: 40px;
   padding: 0;
+}
+.padL {
+  padding-left: 0 !important;
 }
 .Project a.projectLink {
   font-family: 'Fira Sans', sans-serif;
@@ -419,6 +446,7 @@ ul.menu li {
   padding: 16px 0;
   text-transform: uppercase;
   border-radius: 3px;
+  text-align: center;
 }
 .Project a.projectLink:hover {
   background-color: #334431;

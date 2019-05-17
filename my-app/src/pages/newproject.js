@@ -32,26 +32,34 @@ class NewProject extends Component {
               </ul>
             </div>
             <div className="column">
-              <div className="project-title">
+              <div className="project-title-large">
                 <h1>{this.props.project.title}</h1>
-                <h3> {this.props.project.attributes.type}</h3>
+                <h3>
+                  {this.props.project.attributes.type.map((cardType, index) => <span>{cardType} {index < this.props.project.attributes.type.length - 1 && ' | '}</span>)}
+                </h3>
               </div>
               <div className="project-description-lg column is-8 is-offset-2">
                 <p>{this.props.project.attributes.description}</p>
               </div>
-              <img className="column is-8 is-offset-2 shadowNone" src={this.props.project.attributes.imgTop}/>
-              <img className="column is-2 is-offset-5 shadowNone" src={this.props.project.attributes.imgTopSm}/>
+              <div className="columns is-variable is-12">
+                  <div className="column is-6">
+                    <img className="column is-12 shadowNone" src={this.props.project.attributes.imgTop}/>
+                    <img className="column is-10 is-offset-1 shadowNone" src={this.props.project.attributes.imgTopSm}/>
+                  </div>
+                  <div className="column is-6">
+                      <div className="project-title">
+                        <h1>Project Summary</h1>
+                      </div>
+                      <div className=" summary">
 
-              <div className="project-title">
-                <h1>Project Summary</h1>
-              </div>
-              <div className="column is-10 is-offset-1 summary">
+                        <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.summary)} />
 
-                <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.summary)} />
+                      </div>
+                  </div>
 
               </div>
               <div className="column is-6 is-offset-6 details">
-                <h3 className="column is-12">Problem Space</h3>
+                <h3 className="column is-12 padL">Problem Space</h3>
               </div>
               <div className="column is-6 is-offset-6 details">
                 <div className="challenge column is-12 padL">
@@ -59,7 +67,7 @@ class NewProject extends Component {
                 </div>
               </div>
               <div className="column is-6 is-offset-6 details">
-                <h3 className="column is-12">Challenges</h3>
+                <h3 className="column is-12 padL">Challenges</h3>
               </div>
               <div className="column is-6 is-offset-6 details">
                 <div className="challenge column is-12 padL">
@@ -67,14 +75,19 @@ class NewProject extends Component {
                   <p className="problem researchS is-12" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.challengesTwo)} />
                 </div>
               </div>
-
-              <div className="project-title">
-                <h1>Result</h1>
+              <div className="columns">
+                <div className="column is-6">
+                </div>
+                <div className="column is-6">
+                    <div className="project-title">
+                      <h1>Result</h1>
+                    </div>
+                    <div className="summary">
+                      <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.result)}></p>
+                    </div>
+                </div>
               </div>
-              <div className="column is-10 is-offset-1 summary">
-                <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.result)}></p>
-              </div>
-              <div className="columns is-variable is-7 processGroup">
+              <div className="columns is-variable processGroup">
                 <div className="column is-6 process-image">
                   <img src={this.props.project.attributes.resultOne}/>
                   <img className="shadowNone" src={this.props.project.attributes.resultOneSm}/>
@@ -89,7 +102,7 @@ class NewProject extends Component {
               </div>
 
 
-              <div className="columns is-variable is-7 processGroup">
+              <div className="columns is-variable processGroup">
                 <div className="column is-6 process-image">
                   <img src={this.props.project.attributes.summaryOne}/>
                 </div>
@@ -101,7 +114,7 @@ class NewProject extends Component {
                 </div>
               </div>
 
-              <div className="columns is-variable is-7 processGroup">
+              <div className="columns is-variable processGroup">
                 <div className="column is-6 process-image">
                   <img src={this.props.project.attributes.resultThree}/>
                 </div>
@@ -112,7 +125,7 @@ class NewProject extends Component {
               </div>
 
               {this.props.project.attributes.resultFourInfoS && this.props.project.attributes.resultFour &&
-                <div className="columns is-variable is-7 processGroup">
+                <div className="columns is-variable processGroup">
                   <div className="column is-6 process-image">
                     <img src={this.props.project.attributes.resultFour}/>
                   </div>
@@ -123,7 +136,7 @@ class NewProject extends Component {
               }
 
               {this.props.project.attributes.resultFive && this.props.project.attributes.resultFiveInfo && this.props.project.attributes.resultFiveInfoS && this.props.project.attributes.resultFiveInfoSTwo &&
-                <div className="columns is-variable is-7 processGroup">
+                <div className="columns is-variable processGroup">
                   <div className="column is-6 process-image">
                     <img src={this.props.project.attributes.resultFive}/>
                   </div>
@@ -136,7 +149,7 @@ class NewProject extends Component {
                 </div>
               }
               {this.props.project.attributes.resultSix && this.props.project.attributes.resultSixInfoS &&
-              <div className="columns is-variable is-7 processGroup">
+              <div className="columns is-variable processGroup">
                 <div className="column is-6 process-image">
                   <img src={this.props.project.attributes.resultSix}/>
                 </div>
@@ -145,15 +158,20 @@ class NewProject extends Component {
                 </div>
               </div>
             }
-
-              <div className="project-title">
-                <h1>Process</h1>
+            <div className="columns">
+              <div className="column is-6">
               </div>
-              <div className="column is-10 is-offset-1 summary">
-                <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.process)}></p>
+                <div className="column is-6">
+                    <div className="project-title">
+                      <h1>Process</h1>
+                    </div>
+                    <div className="summary">
+                      <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.process)}></p>
+                    </div>
+                </div>
               </div>
               <div className="column is-6 is-offset-6 details">
-                <h3 className="column is-12">Background Research</h3>
+                <h3 className="column is-12 padL">Background Research</h3>
               </div>
               <div className="column is-6 is-offset-6 details researchMargin">
                 <div className="challenge column is-12 padL">
@@ -161,8 +179,8 @@ class NewProject extends Component {
                   <p className="problem researchS is-12" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.researchS)} />
                 </div>
               </div>
-
-              <div className="columns is-variable is-7 processGroup">
+{this.props.project.attributes.processOne &&
+              <div className="columns is-variable processGroup">
               <div className="column process-image is-6">
                 <img className="shadowNone" src={this.props.project.attributes.processOne}/>
 
@@ -172,11 +190,12 @@ class NewProject extends Component {
 
                 </div>
 
-                <div className="column is-12 process-image margin-bottom">
+                <div className="column is-6 process-image margin-bottom">
                   <img className="shadowNone" src={this.props.project.attributes.processOneS}/>
                 </div>
 
               </div>
+            }
 
 
 {this.props.project.attributes.insightPOne &&
@@ -206,40 +225,33 @@ class NewProject extends Component {
                   <h3 className="title"> Key Findings</h3>
                   <ul className="findings">
                     <li>
-                      <div className="column is-4">
+
+                      <div className="column is-12 padL">
                         <p className="title">Finding 1.</p>
-                      </div>
-                      <div className="column is-8">
                         <p className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightOne)}></p>
                         <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightOneInfo)}></p>
                         <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightOneInfoQ)}></p>
                       </div>
                     </li>
                     <li>
-                      <div className="column is-4">
+                      <div className="column is-12 padL">
                         <p className="title">Finding 2.</p>
-                      </div>
-                      <div className="column is-8">
                         <p className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightTwo)}></p>
                         <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightTwoInfo)}></p>
                         <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightTwoInfoQ)}></p>
                       </div>
                     </li>
                     <li>
-                      <div className="column is-4">
+                      <div className="column is-12 padL">
                         <p className="title">Finding 3.</p>
-                      </div>
-                      <div className="column is-8">
                         <p className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightThree)}></p>
                         <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightThreeInfo)}></p>
                         <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightThreeInfoQ)}></p>
                       </div>
                     </li>
                     <li>
-                      <div className="column is-4">
+                      <div className="column is-12 padL">
                         <p className="title">Finding 4.</p>
-                      </div>
-                      <div className="column is-8">
                         <p className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightFour)}></p>
                         <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightFourInfo)}></p>
                         <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightFourInfoQ)}></p>
@@ -319,7 +331,7 @@ class NewProject extends Component {
                     <div className="column is-4">
                       <img className="shadowNone" src={this.props.project.attributes.decisionOneP}/>
                     </div>
-                    <div className="column is-6 is-offset-2">
+                    <div className="column is-6 is-offset-2 padL">
                       <div className="column is-4">
                         <p className="title">Priority 1.</p>
                       </div>
@@ -333,12 +345,12 @@ class NewProject extends Component {
                     <div className="column is-4">
                       <img className="shadowNone" src={this.props.project.attributes.decisionTwoP}/>
                     </div>
-                    <div className="column is-6 is-offset-2">
+                    <div className="column is-6 is-offset-2 padL">
                       <div className="column is-4">
                         <p className="title">Priority 2.</p>
                       </div>
                       <div className="column is-12">
-                        <p className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightdecisionTwo)}></p>
+                        <p className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.decisionTwo)}></p>
                         <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.decisionTwoInfo)}></p>
                       </div>
                     </div>
@@ -347,7 +359,7 @@ class NewProject extends Component {
                     <div className="column is-4">
                       <img className="shadowNone" src={this.props.project.attributes.decisionThreeP}/>
                     </div>
-                    <div className="column is-6 is-offset-2">
+                    <div className="column is-6 is-offset-2 padL">
                       <div className="column is-4">
                         <p className="title">Priority 3.</p>
                       </div>
@@ -365,7 +377,7 @@ class NewProject extends Component {
 
 
           {this.props.project.attributes.processTwo && this.props.project.attributes.processTwoInfo &&
-              <div className="columns is-variable is-7 processGroup">
+              <div className="columns is-variable processGroup">
                 <div className="column is-6 process-image">
                   <img className="shadowNone" src={this.props.project.attributes.processTwo}/>
                 </div>
@@ -378,7 +390,7 @@ class NewProject extends Component {
             }
             {this.props.project.attributes.processThree && this.props.project.attributes.processThreeInfo &&
 
-              <div className="columns is-variable is-7 processGroup">
+              <div className="columns is-variable processGroup">
                 <div className="column is-6 process-image processThree">
                   <img className="shadowNone" src={this.props.project.attributes.processThree}/>
                 </div>
@@ -389,17 +401,17 @@ class NewProject extends Component {
 
               </div>
             }
-            {this.props.project.attributes.processFourInfo && this.props.project.attributes.processFive &&
-              <div className="columns is-variable is-7 processGroup">
-                <div className="column is-6">
-                  <p className="processFourInfo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processFourInfo)}></p>
-
-                </div>
+              <div className="columns is-variable processGroup">
                 <div className="column is-6 process-image processFour">
                   <img className="shadowNone" src={this.props.project.attributes.processFive}/>
                   <img className="column is-10" src={this.props.project.attributes.processFiveS}/>
                 </div>
-                <div className="columns is-variable is-7 processGroup">
+                <div className="column is-6">
+                  <p className="processFourInfo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.processFourInfo)}></p>
+
+                </div>
+
+                <div className="columns is-variable processGroup">
                   <div className="column is-4 process-image">
                     <img className="shadowNone" src={this.props.project.attributes.processSix}/>
                   </div>
@@ -411,7 +423,6 @@ class NewProject extends Component {
                 </div>
 
               </div>
-            }
 
               <div className="column is-4 is-offset-4 browse">
                     <Link className="projectLink" to="/">Back to Projects</Link>

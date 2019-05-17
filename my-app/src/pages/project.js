@@ -29,24 +29,28 @@ class Project extends Component {
               </ul>
             </div>
             <div className="column">
-
+              <div className="project-title-sec">
+                <h1>{this.props.project.title}</h1>
+                <h3>
+                  {this.props.project.attributes.type.map((cardType, index) => <span>{cardType} {index < this.props.project.attributes.type.length - 1 && ' | '}</span>)}
+                </h3>
+              </div>
+              <div className="project-description-lg column is-8 is-offset-2">
+                <p>{this.props.project.attributes.description}</p>
+              </div>
               <img className="column is-8 is-offset-2" src={this.props.project.attributes.imgTop}/>
               <img className="column is-4 is-offset-4" src={this.props.project.attributes.imgTopSm}/>
 
-              <div className="project-title">
+              <div className="project-title-sec">
                 <h1>Project Summary</h1>
               </div>
-            </div>
               <div className="column is-10 is-offset-1 summary">
 
-                <p className="margin-bottom">{this.props.project.attributes.summary}</p>
-              {this.props.project.attributes.siteLink &&
+                <p className="summary">{this.props.project.attributes.summary}</p>
                 <div className="column is-4 is-offset-4">
                 <a className="projectLink" href={this.props.project.attributes.siteLink}>See It Here</a>
                 </div>
-              }
               </div>
-              <div className="column">
 
               <div className="columns is-variable is-7">
                 <div className="column is-6 process-image">
@@ -58,11 +62,11 @@ class Project extends Component {
                   <img src={this.props.project.attributes.summaryThree}/>
                 </div>
               </div>
-              <div className="project-title">
+              <div className="project-title-sec">
                 <h1>Process</h1>
               </div>
-              <div className="column is-10 is-offset-1 summary">
-                <p>{this.props.project.attributes.process}</p>
+              <div className="column is-10 is-offset-1">
+                <p className="summary">{this.props.project.attributes.process}</p>
               </div>
               <div className="columns is-variable is-7">
                 <div className="column is-4 process-image">
