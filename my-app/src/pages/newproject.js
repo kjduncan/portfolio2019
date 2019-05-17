@@ -16,7 +16,7 @@ class NewProject extends Component {
         <div className="container">
           <div className="columns">
             <div className="column is-7 is-offset-5 ">
-              <ul className="menu">
+              <ul className="menu menu-secondary">
                 <li>
                   <a href="https://drive.google.com/open?id=1aOa1IHc5hr92wdlKwThYCk4a-wuCY-lx" target="_blank">Resume</a>
                 </li>
@@ -87,11 +87,13 @@ class NewProject extends Component {
                     </div>
                 </div>
               </div>
+
               <div className="columns is-variable processGroup">
                 <div className="column is-6 process-image">
                   <img src={this.props.project.attributes.resultOne}/>
+                  {this.props.project.attributes.resultOneSm &&
                   <img className="shadowNone" src={this.props.project.attributes.resultOneSm}/>
-
+                }
                 </div>
                 <div className="column is-6">
                 <h3 className="resultOneInfo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.resultOneInfo)}></h3>
@@ -327,8 +329,8 @@ class NewProject extends Component {
 
               <div className="column is-12">
                 <ul className="findings">
-                  <li>
-                    <div className="column is-4">
+                  <li className="columns is-variable">
+                    <div className="column is-4 is-8-mobile">
                       <img className="shadowNone" src={this.props.project.attributes.decisionOneP}/>
                     </div>
                     <div className="column is-6 is-offset-2 padL">
@@ -341,12 +343,12 @@ class NewProject extends Component {
                       </div>
                       </div>
                   </li>
-                  <li>
-                    <div className="column is-4">
+                  <li className="columns is-variable">
+                    <div className="column is-4 is-8-mobile">
                       <img className="shadowNone" src={this.props.project.attributes.decisionTwoP}/>
                     </div>
                     <div className="column is-6 is-offset-2 padL">
-                      <div className="column is-4">
+                      <div className="column">
                         <p className="title">Priority 2.</p>
                       </div>
                       <div className="column is-12">
@@ -355,12 +357,12 @@ class NewProject extends Component {
                       </div>
                     </div>
                   </li>
-                  <li>
-                    <div className="column is-4">
+                  <li className="columns is-variable">
+                    <div className="column is-4  is-8-mobile">
                       <img className="shadowNone" src={this.props.project.attributes.decisionThreeP}/>
                     </div>
                     <div className="column is-6 is-offset-2 padL">
-                      <div className="column is-4">
+                      <div className="column is-4 is-full-mobile">
                         <p className="title">Priority 3.</p>
                       </div>
                       <div className="column is-12">
