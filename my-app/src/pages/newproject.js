@@ -263,11 +263,13 @@ class NewProject extends Component {
                 </div>
               </div>
             }
-            {this.props.project.attributes.insightFive &&
+            {this.props.project.attributes.insightFive && this.props.project.attributes.insightFivePT &&
               <div className="columns is-variable is-full processGroup">
                 <div className="column process-image is-6 title mTop">
                   <img className="shadowNone" src={this.props.project.attributes.insightFiveP}/>
                   <img className="shadowNone" src={this.props.project.attributes.insightFivePS}/>
+                  <img className="shadowNone" src={this.props.project.attributes.insightFivePT}/>
+
                 </div>
                 <div className="column is-6">
                   <h3 className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightFive)}></h3>
@@ -314,7 +316,7 @@ class NewProject extends Component {
               </div>
             </div>
           }
-          {this.props.project.attributes.insightEight &&
+          {this.props.project.attributes.insightEight && this.props.project.attributes.decisionFourP && this.props.project.attributes.decisionFourInfo && this.props.project.attributes.decisionFour && this.props.project.attributes.decisionFourInfoQ &&
             <div className="columns is-variable is-full processGroup">
               <div className="column is-6 is-offset-6">
                 <h3 dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightEight)}></h3>
@@ -330,7 +332,7 @@ class NewProject extends Component {
               <div className="column is-12">
                 <ul className="findings">
                   <li className="columns is-variable">
-                    <div className="column is-4 is-8-mobile">
+                    <div className="column is-3 is-offset-1 is-8-mobile">
                       <img className="shadowNone" src={this.props.project.attributes.decisionOneP}/>
                     </div>
                     <div className="column is-6 is-offset-2 padL">
@@ -344,11 +346,11 @@ class NewProject extends Component {
                       </div>
                   </li>
                   <li className="columns is-variable">
-                    <div className="column is-4 is-8-mobile">
+                    <div className="column is-3 is-offset-1 is-8-mobile">
                       <img className="shadowNone" src={this.props.project.attributes.decisionTwoP}/>
                     </div>
                     <div className="column is-6 is-offset-2 padL">
-                      <div className="column">
+                      <div className="column is-4  is-8-mobile">
                         <p className="title">Priority 2.</p>
                       </div>
                       <div className="column is-12">
@@ -358,7 +360,7 @@ class NewProject extends Component {
                     </div>
                   </li>
                   <li className="columns is-variable">
-                    <div className="column is-4  is-8-mobile">
+                    <div className="column is-3 is-offset-1  is-8-mobile">
                       <img className="shadowNone" src={this.props.project.attributes.decisionThreeP}/>
                     </div>
                     <div className="column is-6 is-offset-2 padL">
@@ -369,6 +371,21 @@ class NewProject extends Component {
                         <p className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.decisionThree)}></p>
                         <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.decisionThreeInfo)}></p>
                         <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.decisionThreeInfoQ)}></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="columns is-variable">
+                    <div className="column is-3 is-offset-1 is-8-mobile">
+                      <img className="shadowNone" src={this.props.project.attributes.decisionFourP}/>
+                    </div>
+                    <div className="column is-6 is-offset-2 padL">
+                      <div className="column is-4 is-full-mobile">
+                        <p className="title">Priority 4.</p>
+                      </div>
+                      <div className="column is-12">
+                        <p className="title" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.decisionFour)}></p>
+                        <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.decisionFourInfo)}></p>
+                        <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.decisionFourInfoQ)}></p>
                       </div>
                     </div>
                   </li>
