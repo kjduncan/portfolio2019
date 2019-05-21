@@ -3,6 +3,7 @@ import './App.css';
 import 'bulma';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { withRouter } from "react-router";
+import ReactGA from 'react-ga';
 
 
 import Home from './pages/home.js';
@@ -153,6 +154,12 @@ import set from './images/set.svg';
 import intentional from './images/reflection.svg';
 import playful from './images/playful.svg';
 import reflection from './images/intetional.svg';
+ReactGA.initialize('UA-75590490-1');
+
+function initializeReactGA() {
+
+    ReactGA.pageview('/home');
+}
 
 
 
@@ -514,6 +521,8 @@ let projects = [
     }
   }
 ]
+
+
 
 class ScrollToTop extends Component {
   componentDidUpdate(prevProps) {

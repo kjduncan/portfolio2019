@@ -17,6 +17,7 @@
  a.cardGroup {
   text-decoration: none;
   color: #4f4f4f;
+  width: 100%;
 }
  a.cardGroup:hover {
    border-bottom: none;
