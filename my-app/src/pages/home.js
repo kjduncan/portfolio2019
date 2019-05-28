@@ -68,13 +68,13 @@ class Home extends Component {
                   <h2>Experience Designer</h2>
                   <ul className="social">
                     <li>
-                      <a href="mailto:duncan.katelynj@gmail.com"><img src={mail}/></a>
+                      <a href="mailto:duncan.katelynj@gmail.com"><img className="email" src={mail}/></a>
                     </li>
                     <li>
-                      <a href="https://github.com/kjduncan"><img src={github}/></a>
+                      <a href="https://github.com/kjduncan"><img className="github" src={github}/></a>
                     </li>
                     <li>
-                      <a href="https://www.linkedin.com/in/duncankatelyn/"><img src={linkedIn}/></a>
+                      <a href="https://www.linkedin.com/in/duncankatelyn/"><img className="linked" src={linkedIn}/></a>
                     </li>
 
                   </ul>

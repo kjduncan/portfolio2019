@@ -157,16 +157,17 @@ a.nav-home {
 }
 .landing-info h1 {
   font-size: 80px;
-  line-height: 96px;
+  line-height: 92px;
   text-align: left;
   font-weight: 700;
   color: #334431;
+  margin-bottom: 8px;
 }
 .landing-info h2 {
   text-align: left;
   color: #334431;
   font-size: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .gif-stuff {
   background-color: #f2cbbc;
@@ -201,8 +202,19 @@ ul.menu li a {
   padding-left: 4px;
 }
 .social img {
-  color: #000000;
-  height: 24px;
+  color: #4f4f4f;
+  height: 17px;
+
+}
+.social img.linked {
+  height: 16px;
+  margin-bottom: 2px;
+}
+.social img.github {
+  height: 17px;
+}
+.social img.email {
+  height: 17px;
 }
 .social li {
     padding-right: 16px;
@@ -271,14 +283,18 @@ ul.filter-buttons {
 .footer .landing-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-end;
   margin-bottom: 24px;
 }
-.footer .social {
+.footer .social li {
   padding-left: 24px;
   padding-right: 0;
   justify-content: space-between;
 
+}
+.footer ul.social {
+  padding-right: 0;
 }
 
 /*card component*/
