@@ -263,12 +263,14 @@ class NewProject extends Component {
                 </div>
               </div>
             }
-            {this.props.project.attributes.insightFive && this.props.project.attributes.insightFivePT &&
+            {this.props.project.attributes.insightFive &&
               <div className="columns is-variable is-full processGroup">
                 <div className="column process-image is-6 title mTop">
                   <img className="shadowNone" src={this.props.project.attributes.insightFiveP}/>
                   <img className="shadowNone" src={this.props.project.attributes.insightFivePS}/>
+                  {this.props.project.attributes.insightFivePT &&
                   <img className="shadowNone" src={this.props.project.attributes.insightFivePT}/>
+                }
 
                 </div>
                 <div className="column is-6">
@@ -374,6 +376,8 @@ class NewProject extends Component {
                       </div>
                     </div>
                   </li>
+
+                {this.props.project.attributes.decisionFourP &&
                   <li className="columns is-variable">
                     <div className="column is-3 is-offset-1 is-8-mobile">
                       <img className="shadowNone" src={this.props.project.attributes.decisionFourP}/>
@@ -389,6 +393,7 @@ class NewProject extends Component {
                       </div>
                     </div>
                   </li>
+                }
                 </ul>
               </div>
             </div>
