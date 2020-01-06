@@ -18,7 +18,7 @@ class NewProject extends Component {
             <div className="column is-7 is-offset-5 ">
               <ul className="menu menu-secondary">
                 <li>
-                  <a href="https://drive.google.com/open?id=1aOa1IHc5hr92wdlKwThYCk4a-wuCY-lx" target="_blank">Resume</a>
+                  <a href="https://drive.google.com/file/d/1tXVV4rQDXK1agCFioc6v2JrrlikpZqwq/view?usp=sharing" target="_blank">Resume</a>
                 </li>
                 <li>
                   <a href="https://medium.com/@duncan.katelynj" target="_blank">Blog</a>
@@ -475,7 +475,7 @@ class NewProject extends Component {
             <div className="footer-solid column is-three-fifths">
               <ul className="menu">
                 <li>
-                  <a href="https://drive.google.com/open?id=1aOa1IHc5hr92wdlKwThYCk4a-wuCY-lx" target="_blank">Resume</a>
+                  <a href="https://drive.google.com/file/d/1tXVV4rQDXK1agCFioc6v2JrrlikpZqwq/view?usp=sharing" target="_blank">Resume</a>
                 </li>
                 <li>
                   <a href="https://medium.com/@duncan.katelynj" target="_blank">Blog</a>

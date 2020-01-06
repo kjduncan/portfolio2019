@@ -46,7 +46,7 @@ class Home extends Component {
             <div className="gif-stuff column is-three-fifths">
                 <ul className="menu">
                   <li>
-                    <a href="https://drive.google.com/open?id=1aOa1IHc5hr92wdlKwThYCk4a-wuCY-lx" target="_blank">Resume</a>
+                    <a href="https://drive.google.com/file/d/1tXVV4rQDXK1agCFioc6v2JrrlikpZqwq/view?usp=sharing" target="_blank">Resume</a>
                   </li>
                   <li>
                     <a href="https://medium.com/@duncan.katelynj" target="_blank">Blog</a>
@@ -65,17 +65,18 @@ class Home extends Component {
               <div className="is-two-fifths column">
                 <div className="landing-info">
                   <h1>Katelyn Duncan</h1>
-                  <h2>Experience Designer</h2>
+                  <h2>Product Designer</h2>
                   <ul className="social">
                     <li>
                       <a href="mailto:duncan.katelynj@gmail.com"><img className="email" src={mail}/></a>
                     </li>
                     <li>
-                      <a href="https://github.com/kjduncan"><img className="github" src={github}/></a>
-                    </li>
-                    <li>
                       <a href="https://www.linkedin.com/in/duncankatelyn/"><img className="linked" src={linkedIn}/></a>
                     </li>
+                    <li>
+                      <a href="https://github.com/kjduncan"><img className="github" src={github}/></a>
+                    </li>
+
 
                   </ul>
                 </div>
@@ -100,6 +101,27 @@ class Home extends Component {
                   }
                 })}
             </div>
+            <div className="addition-wrap">
+            <div className="column is-variable is-full">
+              <h1>Additional Work</h1>
+            </div>
+            <div className="column is-variable is-full">
+                <ul className="additional">
+                  <li>
+                    <a target="_blank" href="https://www.macrostax.com/">Lead Product Designer: Macrostax</a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://jinghu2.github.io/kits/">UX Technical Lead and Project Manager: Zazzle MHCI Capstone</a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://therealmontana.com/">Frontend Developer: Tim Gravelle Real Estate</a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="http://406-elevated.com/">Frontend Developer: Elevation Dental</a>
+                  </li>
+                </ul>
+                </div>
+            </div>
           </div>
           <div className="columns footer">
             <div className="is-two-fifths column">
@@ -122,7 +144,7 @@ class Home extends Component {
             <div className="footer-solid column is-three-fifths">
               <ul className="menu">
                 <li>
-                  <a href="https://drive.google.com/open?id=1aOa1IHc5hr92wdlKwThYCk4a-wuCY-lx" target="_blank">Resume</a>
+                  <a href="https://drive.google.com/file/d/1tXVV4rQDXK1agCFioc6v2JrrlikpZqwq/view?usp=sharing" target="_blank">Resume</a>
                 </li>
                 <li>
                   <a href="https://medium.com/@duncan.katelynj" target="_blank">Blog</a>

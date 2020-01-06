@@ -13,6 +13,36 @@
 .About .column {
   flex-direction: column !important;
 }
+.addition-wrap {
+  padding: 120px 0;
+  padding-top: 0;
+}
+.addition-wrap h1 {
+  font-family: 'Noto Serif', serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+}
+.addition-wrap ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.addition-wrap ul li {
+  padding: 16px 0px;
+}
+.addition-wrap ul li a {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: #334431;
+  border-bottom: 4px solid #f2cbbc;
+  padding-bottom: 8px;
+}
+.addition-wrap ul li a:hover {
+  border-bottom: 4px solid #334431;
+}
 
  a.cardGroup {
   text-decoration: none;
@@ -203,21 +233,17 @@ ul.menu li a {
 }
 .social img {
   color: #4f4f4f;
-  height: 17px;
+  height: 32px;
 
 }
 .social img.linked {
-  height: 16px;
-  margin-bottom: 2px;
+  padding: 4px;
 }
 .social img.github {
-  height: 17px;
-}
-.social img.email {
-  height: 17px;
+  padding: 2px;
 }
 .social li {
-    padding-right: 16px;
+    padding-right: 24px;
 }
 
 .filter-buttons {
@@ -279,6 +305,10 @@ ul.filter-buttons {
 }
 .footer .landing-info a.nav-home {
   align-self: flex-end;
+  margin-top: 8px;
+}
+.footer .landing-info a.nav-home:hover {
+  border-bottom: none;
 }
 .footer .landing-info {
   display: flex;
@@ -286,6 +316,9 @@ ul.filter-buttons {
   justify-content: flex-start;
   align-items: flex-end;
   margin-bottom: 24px;
+}
+.footer .social {
+  padding: 24px 0;
 }
 .footer .social li {
   padding-left: 24px;
