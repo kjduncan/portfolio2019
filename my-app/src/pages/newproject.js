@@ -132,6 +132,7 @@ class NewProject extends Component {
                     <img src={this.props.project.attributes.resultFour}/>
                   </div>
                   <div className="column is-6">
+                  <h3 className="resultFourInfo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.resultFourInfo)}></h3>
                   <p className="resultFourInfoS" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.resultFourInfoS)}></p>
                   </div>
                 </div>
@@ -156,7 +157,9 @@ class NewProject extends Component {
                   <img src={this.props.project.attributes.resultSix}/>
                 </div>
                 <div className="column is-6">
-                <p className="resultFourInfoS" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.resultSixInfoS)}></p>
+                <h3 className="resultSixInfo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.resultSixInfo)}></h3>
+                <p className="resultSixInfoS" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.resultSixInfoS)}></p>
+                <p className="resultSixInfoSTwo" dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.resultSixInfoSTwo)}></p>
                 </div>
               </div>
             }
@@ -318,9 +321,12 @@ class NewProject extends Component {
               </div>
             </div>
           }
-          {this.props.project.attributes.insightEight && this.props.project.attributes.decisionFourP && this.props.project.attributes.decisionFourInfo && this.props.project.attributes.decisionFour && this.props.project.attributes.decisionFourInfoQ &&
+          {this.props.project.attributes.insightEight &&
             <div className="columns is-variable is-full processGroup">
-              <div className="column is-6 is-offset-6">
+            <div className="column is-6">
+              <img src={this.props.project.attributes.insightEightP}/>
+            </div>
+              <div className="column is-6">
                 <h3 dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightEight)}></h3>
                 <p dangerouslySetInnerHTML={this.rawHtml(this.props.project.attributes.insightEightInfo)}></p>
               </div>
