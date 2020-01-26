@@ -427,6 +427,15 @@ ul.filter-buttons {
 .Project ul.menu a {
   font-size: 24px;
 }
+.About ul.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 64px;
+}
+.About ul.menu a {
+  font-size: 24px;
+}
 .Project .project-title {
   padding-top: 80px;
   padding-left: 0;
@@ -455,6 +464,24 @@ ul.filter-buttons {
 }
 .Project ul.menu a.nav-home {
   margin-left: 32px;
+  border-bottom: none !important;
+}
+.About .myFace {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.About .myFace img {
+  width: auto;
+  height: 100%;
+  margin-left: 25px;
+}
+.About ul.menu a.nav-home {
+  margin-left: 32px;
+  border-bottom: none !important;
 }
 ul.menu li {
   font-size: 24px;
@@ -557,9 +584,7 @@ p.caption {
   line-height: 40px;
   padding: 0;
 }
-.About ul.menu li a {
-  color: #000000;
-}
+
 .About ul.menu {
   display: flex;
   flex-direction: row;

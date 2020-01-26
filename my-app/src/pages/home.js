@@ -108,10 +108,10 @@ class Home extends Component {
             <div className="column is-variable is-full">
                 <ul className="additional">
                   <li>
-                    <a target="_blank" href="https://www.macrostax.com/">Lead Product Designer: Macrostax</a>
+                    <a target="_blank" href="https://jinghu2.github.io/kits/">UX Technical Lead and Project Manager: Zazzle MHCI Capstone</a>
                   </li>
                   <li>
-                    <a target="_blank" href="https://jinghu2.github.io/kits/">UX Technical Lead and Project Manager: Zazzle MHCI Capstone</a>
+                    <a target="_blank" href="http://katelynduncan.com/project/veritas">UX Designer: Veritas</a>
                   </li>
                   <li>
                     <a target="_blank" href="https://therealmontana.com/">Frontend Developer: Tim Gravelle Real Estate</a>

@@ -184,11 +184,11 @@ let projects = [
     slug: 'Macrostax',
     categories: ['Design'],
     attributes: {
-        description: 'A personalized macronutrient tracking tool with recipe and food recommendations',
+        description: 'A personalized macronutrient tracking tool that tells users what, when, and how much to eat',
         type: ['UX', 'UI', 'Design', 'User Research'],
         imgSrc: mProject,
         imgTopSm: macroHome,
-        summary: "Over the course of 6 months to the present, I have worked as the sole designer to lead a visual UI/UX refresh of the current Macrostax web-based application. <strong>The goals of a UI refresh was to improve the overall look and feel of the app, enhance usability, and design key features that would increase retention and reduce churn over time.</strong> I was asked to improve the current app to a level that would sustainably support our user base while we worked on other key product initiatives in the near future.",
+        summary: "Over the course of 6 months to the present, I have worked as the lead product designer to execute a visual UI/UX refresh of the current Macrostax web-based application. <strong>The goals of a UI refresh was to improve the overall look and feel of the app, enhance usability, and design key features that would increase retention and reduce churn over time.</strong> I was asked to improve the current app to a level that would sustainably support our user base while we worked on other key product initiatives in the near future.",
         problem: 'Nutrition and health related goals are a common pursuit for a lot of people. Often times, food tracking applications focus of caloric deficits meant to support users in reaching physical goals related to weight loss or muscle gain. <strong>The issue with most of these applications and diet methodologies is that the caloric deficit is too high to maintain long-term and is not supportive of sustainable lifestyle shifts.</strong> Macrostax strives to address this problem by encouraging users to sustain a higher caloric intake over time and <strong>emphasizing balance between three main macronutrients: carbohydrates, proteins, and fats.</strong>',
         challenges: 'Macrostax users want to fuel their bodies and make positive behavioral changes in their lives with support and accountability. Macrostax offers higher caloric recommendations than their competitors with a focus on nutritionally dense and balanced food which leaves users feeling energized instead of starving. Currently there are several key features that are meant to support users in these goals. <strong>However, these features are difficult to find and use, often increasing the level of frustration that is commonly associated with nutrition and diet related behavior changes.</strong>',
         challengesTwo: 'Daily active users of Macrostax have learned onerous work-arounds to achieve success while new users often get frustrated and leave as evidenced by a common 2 month churn cycle. The app has the potential to reduce stress and make nutrition something that is fun and easy for anyone. My goal has been to improve the usability of the application by <strong>surfacing key features, improving accessibility, and providing positive feedback when users ate nutritionally dense food throughout the day.</strong> I want newcomers and expert users alike to more readily experience the benefits of properly fueling their bodies with food!',
@@ -482,7 +482,7 @@ let projects = [
   },
   {
     title: 'Veritas',
-    slug: 'veritas',
+    // slug: 'veritas',
     categories: ['Design'],
     attributes: {
       description: 'A native ios game in response to misinformation spread through social networks',
