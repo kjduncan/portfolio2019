@@ -7,6 +7,7 @@ import Card from '../components/card';
 import mail from '../images/mail.svg';
 import linkedIn from '../images/linkedin.svg';
 import github from '../images/github.svg';
+import launch from '../images/launch.svg';
 
 
 
@@ -108,16 +109,16 @@ class Home extends Component {
             <div className="column is-variable is-full">
                 <ul className="additional">
                   <li>
-                    <a target="_blank" href="https://jinghu2.github.io/kits/">UX Technical Lead and Project Manager: Zazzle MHCI Capstone</a>
+                    <a target="_blank" href="https://jinghu2.github.io/kits/">
+                    UX Technical Lead and Project Manager: Zazzle MHCI Capstone
+                    <img className="launch" src={launch}/>
+                    </a>
                   </li>
                   <li>
-                    <a target="_blank" href="http://katelynduncan.com/project/veritas">UX Designer: Veritas</a>
+                    <a target="_blank" href="https://therealmontana.com/">Frontend Developer: Tim Gravelle Real Estate <img className="launch" src={launch}/></a>
                   </li>
                   <li>
-                    <a target="_blank" href="https://therealmontana.com/">Frontend Developer: Tim Gravelle Real Estate</a>
-                  </li>
-                  <li>
-                    <a target="_blank" href="http://406-elevated.com/">Frontend Developer: Elevation Dental</a>
+                    <a target="_blank" href="http://406-elevated.com/">Frontend Developer: Elevation Dental<img className="launch" src={launch}/></a>
                   </li>
                 </ul>
                 </div>

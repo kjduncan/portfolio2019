@@ -482,9 +482,10 @@ let projects = [
   },
   {
     title: 'Veritas',
-    // slug: 'veritas',
+    slug: 'veritas',
     categories: ['Design'],
     attributes: {
+      secondaryProject: true,
       description: 'A native ios game in response to misinformation spread through social networks',
       type: ['Game Design', 'User Research', 'React Native'],
       imgSrc: worbleProject,
@@ -561,7 +562,7 @@ let projects = [
   //     summary: 'The Real Montana is a boutique real estate firm based in Whitefish Montana. I was hired as the frontend developer on this project. We were asked to create a website for a small boutique real estate firm in Whitefish Montana. The client wanted us to show off their services, allow users to search for properties, and highlight contact information. I used wordpress to build the site and Illustrator and Photosphop to collaborate on the design work.',
   //     siteLink: 'https://therealmontana.com/',
   //     site: 'https://kjduncan.github.io/learn-space/',
-  //     process: 'The designer and I worked closesly together and with the client to determine what would best suit their needs. I offered recommendations about how the site should be built and what technologies would best suit their needs and their budget. We determined that Wordpress would be the most sustainable solution for them. I implemented a very simple template that could be easily customized and then built the site on top of that. I connected the site to an MLS plugin that would allow users to easily browse properties. I also implemented a contact form for users to get in touch and start the process of buying or selling a home.',
+  //     process: 'The designer and I worked closesly together and with the client to determine what would best suit their needs. I offered recommendations about how the site should be built and what technologies would best suit their needs and their budget. We determined that Wordpress would be the most sustainable solution for them. I implemented a very simple template that could be easily customized and then built the site on top of that. I connected the site to an MLS plugin that would    allow users to easily browse properties. I also implemented a contact form for users to get in touch and start the process of buying or selling a home.',
   //     processOne: tgContact,
   //     processTwo: tgList,
   //     processThree: tgProperties,
