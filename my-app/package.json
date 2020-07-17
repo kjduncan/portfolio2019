@@ -7,7 +7,7 @@
     "aws-amplify": "^1.1.18",
     "aws-amplify-react": "^2.2.5",
     "bulma": "^0.7.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "node-sass": "^4.11.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
